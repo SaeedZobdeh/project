@@ -1,95 +1,143 @@
 <!DOCTYPE html>
-<html lang="FA-IR">
+<html lang="FA-IR" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="https://cdn.tailwindcss.com"> </script>
 <title> information </title>
 <body>
     <HEader></HEader>
     <main>
-        <div class="main__left" >
-            <form >
-                <div class="main__left__1">
+      <div class="allmain flex flex-row w-[1070px] h-[686px] top-[180px] left-[160px] p-[40px] px-[32px] gap-[32px] rounded-tl-[24px] border-t border-l bg-white border border-[#F5F6F8] shadow-md" >
+        <div class="main__left   flex flex-col w-[471px] h-full max-h-[606px] gap-0 justify-between" dir="rtl" >
+            
+                <div class="main__left__ flex flex-row w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between" dir="rtl">
+                   
+                <div>
                     <label >:نام </label><br>
-                    <input type="text" id="fname" name="fname" placeholder="نام شما" dir="rtl"><br>
+                    <input type="text" class="w-[223px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300" id="fname" name="fname" placeholder="نام شما" dir="rtl">
+                </div> 
+                   
+                   <div>
                     <label for="lname">:نام خانوادگی</label><br>
-                    <input type="text" id="lname" name="lname" placeholder="نام خانوادگی شما " dir="rtl"><br>
+                    <input type="text"  class="w-[223px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300" id="lname" name="lname" placeholder="نام خانوادگی شما " dir="rtl">
                 </div>
-                <div class="main__left__2">
+                    
+                </div>
+                <div class="main__left__2 ">
                     <label for="email">:ایمیل</label><br>
-                    <input type="text" id="email" name="email" placeholder="ایمیل" dir="rtl"><br>
+                    <input type="text" class="w-full max-w-[471px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300 " id="email" name="email" placeholder="ایمیل" dir="rtl"><br>
                 </div>
-                <div class="main__left__3">
+                <div class="main__left__3 ">
                     <label for="phonenumber">:شماره تماس</label><br>
-                    <input type="number" id="number" name="phonenumber" placeholder="شماره تماس شما" dir="rtl"><br>
+                    <input type="tel" id="number" class="w-full max-w-[471px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l  border-gray-300" name="phonenumber" placeholder="شماره تماس شما" dir="rtl"><br>
                 </div>
-                <div class="main__left__4">
+                <div class="main__left__4 ">
                     <label for="message">متن</label><br>
-                <textarea id="message" name="message" rows="4" cols="20" placeholder="متن شما" dir="rtl"></textarea><br>
+                <textarea  class="w-full max-w-[471px] h-[136px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l  border border-gray-300" id="message" name="message" rows="4" cols="20" placeholder="متن شما" dir="rtl"></textarea><br>
                 </div>
-                <div class="main__left__5">
-                    <input type="submit" value="ارسال پیام" >
+                <div class="main__left__5 ">
+                    <input type="submit" class="w-full max-w-[471px] h-[56px] p-[8px] px-[24px] gap-[8px] rounded-tl-[6px] bg-blue-600" value="ارسال پیام" >
+              </div>
+              
+        </div>
+        <div class="main__right flex flex-col w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between" dir="rtl">
+            <div class="main__right__top w-full max-w-[470px] h-auto gap-8">
+                 <div class="main__right__top__1 w-[467px] h-auto gap-[12px]">
+                    <p class="w-[197px] h-[72px] gap-0 font-abarMidFaNum text-[40px] font-extrabold leading-[72px] text-center text-[#070D31]">تماس با من </p>
+                    
+             <p  class="w-[462px] h-[72px] gap-0 font-abarMidFaNum text-[20px] font-normal leading-[36px] text-right text-[#6F7076]">
+                چیزی هست که بخوایی ازم بپرسی؟خوشحال می شم بتونم  بهت کمک کنم.
+             </p>
+
+            </div>
+            <div class="w-full max-w-[470px] h-auto gap-[16px]">
+                <div class="main__right__top__3 flex flex-row w-full max-w-[470px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px]">
+                    <div>
+                        <img src="./call.png" alt="call info">
+                    </div>
+                    <div>
+                       <p class="w-[112px] h-[28px] gap-0 font-yekanBakhFaNum text-[18px] font-semibold leading-[27.9px] text-left text-[#070D31]"> 
+                        09124567899
+
+                       </p>
+                    </div>
+                   
                 </div>
-              </form> 
-        </div>
-        <div class="main__right">
-            <div class="main__right__top">
-                 <div class="main__right__top__1">
-                    <h2>تماس با من </h2>
-                 </div>
-            <div class="main__right__top__2"> چیزی هست که بخوایی ازم   بپرسی؟خوشحال می شم بتونم  بهت کمک کن
-
+                <div class="main__right__top__4 flex flex-row  w-full max-w-[470px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px]"> 
+                    <div>
+                        <img src="./sms.jpg" alt="emailinfo" >
+                    </div>
+                    <div>
+                        <p class="w-[202px] h-[27px] gap-0 font-poppins text-[18px] font-medium leading-[27px] text-left text-[#070D31]">
+                            queralist@gmail.com
+                        </p>
+                    </div>
+                    
+                    
+                </div>
             </div>
-
-            <div class="main__right__top__3">
-                <img src="./call.png" alt="call info"> 09124567899
+          
+            <div class="main__right__botton flex flex-row  w-auto max-w-[160px] h-auto max-h-[32px] gap-[32px]  justify-end">
+                <img src="./linkedin.jpg" alt="linkedin">
+                <img src="./twitter.jpg" alt="twitter">
+                <img src="./mark-github.png" alt="github">
             </div>
-            <div class="main__right__top__4"> 
-                <img src="./sms.jpg" alt="emailinfo">queralist@gmail.com
-            </div>
-        </div>
-        <div class="main__right__botton">
-            <img src="./linkedin.jpg" alt="linkedin">
-            <img src="./twitter.jpg" alt="twitter">
-            <img src="./mark-github.png" alt="github">
-        </div>
-
-        </div>
-    </main>
-    <footer>
-        <div class="footer__description">
-            کوئرالیست
+    
         </div>
         
-        <div class="footer__middle">
-            <div class="footer__middle__left">
-                باما در ارتباط باش 
-                <p>اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
-                 
-                <button>ارسال</button> 
-                <input type="email">              
-            </div>
-            <div class="footer__middle__right">
-                <div class="footer__middle__right__1">
-                    021-44445566 :فکس
-                <img src="./faxs.png" alt="فکس">
-            </div>
-                <div class="footer__middle__right__2"> 
-                    021-44445566 :تلفن پشتیبانی 
-                    <img src="./call.png" alt=" تلفن">
-                </div>
-                <div class="footer__middle__right__3">
-                    آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
-                    <img src="./loc.jpg" alt="locatin">
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class=" flex flex-col w-[1440px] h-[378px] top-[937px] left-[-1px] p-[0px 451px] gap-12 rounded-[5px 0px 0px 0px] ">
+            <div class="footer__description   ">
+                <div class=" flex align-center justify-center text-20 font-semibold leading-31  border-solid  border-gray-700 transform " >
+                        کوئرالیست
                 </div>
             </div>
-            <div class="footer__end"> 
-                 حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
-
-            </div>
-
+                
+            <div class="footer__middle flex flex-row  w-[1440px] h-[167px] p-[0px 160px] gap-[0px] justify-between  " dir="auto">
+                    <div class="footer__middle__left">
+                        <div class="footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex " lang="fa-IR">
+                            <img src="./faxs.png" alt="فکس">
+                            فکس : 44445566-021
+                        
+                        </div>
+                        <div class="footer__middle__right__2 footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex" lang="fa-IR"> 
+                            <img src="./call.png" alt=" تلفن">
+                            تلفن پشتیبانی:44445566-021
+                            
+                        </div>
+                        <div class="footer__middle__right__3 footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex " lang="fa-IR">
+                            <img src="./location.jpg" alt="locatin">
+                            آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
+                            
+                        </div>
+                    </div>
+                    <div class="footer__middle__right">
+                        باما در ارتباط باش 
+                        <p>اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
+                        <div class=" border-solid border-2 border-gray-100">
+                            <input type="email "  class=""  >   
+                            <button class="bg-indigo-500 rounded-mg  ">ارسال</button> 
+                                
+                        </div>
+                             
+                        
+                    </div>
+                    
+                </div>
+                <div class="footer__end"> 
+                    <div class="flex align-center justify-center"> 
+                        حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
+   
+                    </div>
+                    
+               </div>
+   
         </div>
     </footer>
     
