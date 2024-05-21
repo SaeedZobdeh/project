@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Shabnam-FD';
+  src: url('./assets/font/Shabnam-FD.ttf') format('truetype');
+ 
+}
+
+body {
+  font-family: 'Shabnam-FD'   ;
+}
