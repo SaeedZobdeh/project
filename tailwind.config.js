@@ -1,24 +1,10 @@
-module.exports = {
-    theme: {
-      extend: {
-       
-      }
-    },
-    plugins: [
-      function({ addUtilities }) {
-        const newUtilities = {
-          '.image-rendering-auto': {
-            'image-rendering': 'auto',
-          },
-          '.image-rendering-crisp-edges': {
-            'image-rendering': 'crisp-edges',
-          },
-          '.image-rendering-pixelated': {
-            'image-rendering': 'pixelated',
-          },
-        }
-  
-        addUtilities(newUtilities, ['responsive', 'hover'])
-      }
-    ]
-  }
+tailwind.config = {
+  darkMode: 'class', // or 'media' if you prefer the system preference
+  content: [
+    './**/*.{html,js}', // Adjust the path to your project's structure
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
