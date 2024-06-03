@@ -33,3 +33,11 @@ online.src = `./assets/svg/simple-${theme}.png`
 const imagegroup = document.querySelector('#group-img')
 imagegroup.src = `./assets/img/group-${theme}.png`
 
+const element1 =document.createElement('div')
+element1.setAttribute('class', 'xx')
+element1.textContent = '346'
+
+
+const el = document.querySelector('#root')
+el.appendChild(element1)
+
