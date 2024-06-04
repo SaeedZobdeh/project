@@ -1,0 +1,20 @@
+/* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Shabnam-FD';
+  src: url('./assets/font/Shabnam-FD.ttf') format('truetype');
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Shabnam-FD'   ;
+}
