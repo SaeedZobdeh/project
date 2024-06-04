@@ -4,46 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="font.css">
+    <script src="https://cdn.tailwindcss.com"> </script>
 </head>
-<script src="https://cdn.tailwindcss.com"> </script>
 <title> information </title>
-<body>
-    <HEader></HEader>
-    <main>
-      <div class="allmain flex flex-row w-[1070px] h-[686px] top-[180px] left-[160px] p-[40px] px-[32px] gap-[32px] rounded-tl-[24px] border-t border-l bg-white border border-[#F5F6F8] shadow-md" >
+<body class=" bg-white  text-white">
+    <HEader dir="rtl">
+        
+        <nav id="header_navbar" class="flex justify-between  px-20 mt-[2vh] " >
+            <div id="header_navbar_list" class="flex justify-center text-center mt-[1.3vh]">
+                
+                <a href="./main.html" class="font-bold ml-20 hover:text-[#2C7EF8] text-[20px]">کوئرا لیست</a>
+                <a href="#" class="ml-20 text-[#666666]  hover:text-[#2C7EF8] text-[16px]">صفحه اصلی</a>
+                <a href="#" class="ml-20 text-[#666666]  hover:text-[#2C7EF8] text-[16px]" >درباره ما</a>
+                <a href="#" class="ml-20 text-[#666666] hover:text-[#2C7EF8] text-[16px]">ارتباط با ما</a>
+
+            </div>
+            <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh]">
+                <button type="button" class="text-center rounded-lg border-solid text-white border-[#2C7EF8] bg-[#2C7EF8]  ml-[2vh]  border-x-[30px] border-y-[8px] h-12 ">ورود به اپلیکیشن</button>
+                <a href=""><img src="./assets/svg/Frame 1000005337.png" alt="darkmode"></a>
+            </div>
+        </nav> 
+
+    </HEader>
+
+    <main class="  align-center flex sm:flex  md:hidden  lg:hidden justify-center align-middle flex-col  bg-white  ">
+        <div class="main__right__top__1  h-[101px] top-[73px] left-[24px] gap-2">
+            
+                <p class="font-[AbarMidFaNum] text-2xl font-bold leading-[43.2px] text-center text-[#141414]  ">
+                    تماس با ما 
+                </p>
+
+                <p class="font-[AbarMidFaNum] text-lg  font-normal   text-center text-[#141414]">
+                    چیزی هست که بخوایی ازم بپرسی؟خوشحال می شم بتونم<br> .بهت کمک کنم.
+                 </p>
+    </div>
+
+        <div class="allmain flex flex-col w-[1070px] h-[686px] top-[180px] left-[200px] p-[40px] px-[92px] gap-[32px] rounded-[24px] border-t border-l bg-white border border-[#F5F6F8] shadow-md justify-between " >
+          <div class="main__left   flex flex-col w-[471px] h-full max-h-[606px] gap-0 justify-between" dir="rtl" >
+              
+                  <div class="main__left__ flex flex-row w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between" dir="rtl">
+                     
+                  <div>
+                      <label  class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[27px] h-[25px] gap-0 text-[#070D31]">نام :
+  
+                      </label><br>
+                      <input type="text" class="w-[223px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300" id="fname" name="fname" placeholder="نام شما" dir="rtl">
+                  </div> 
+                     
+                     <div>
+                      <label class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[94px] h-[25px] gap-0 text-[#070D31]" for="lname">نام خانوادگی:
+  
+                      </label><br>
+                      <input type="text"  class="w-[223px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300" id="lname" name="lname" placeholder="نام خانوادگی شما " dir="rtl">
+                  </div>
+                      
+                  </div>
+                  <div class="main__left__2 ">
+                      <label for="email" class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[42px] h-[25px] gap-0 text-[#070D31]"> 
+                          ایمیل:
+                      </label><br>
+                      <input type="text" class="w-full max-w-[471px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300 " id="email" name="email" placeholder="ایمیل" dir="rtl"><br>
+                  </div>
+                  <div class="main__left__3 ">
+                      <label for="phonenumber" class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[89px] h-[25px] gap-0 text-[#070D31]">شماره تماس
+                      :</label><br>
+                      <input type="tel" id="number" class="w-full max-w-[471px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l  border-gray-300" name="phonenumber" placeholder="شماره تماس شما" dir="rtl"><br>
+                  </div>
+                  <div class="main__left__4 ">
+                      <label for="message" class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[32px] h-[25px] gap-0 text-[#070D31]">متن:</label><br>
+                  <textarea  class="w-full max-w-[471px] h-[136px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l  border border-gray-300" id="message" name="message" rows="4" cols="20" placeholder="متن شما" dir="rtl"></textarea><br>
+                  </div>
+                  <div class="main__left__5 ">
+                      <input type="submit" class="max-w-[471px]  p-[8px] px-[24px] gap-[8px] rounded-[6px]  w-[471px] h-14 bg-blue-600  font-yekan text-lg font-bold leading-[27.9px]   text-white " value="  ارسال پیام" >
+                </div>
+                
+          </div>
+          <div class="main__right flex flex-col w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between relative" dir="rtl">
+              <div class="main__right__top w-full max-w-[470px] h-auto gap-8 flex flex-col">
+                 
+              <div class="flex   gap-[16px] flex-row">
+                  <div class="main__right__top__3 flex flex-row w-full max-w-[470px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px]">
+                      <div>
+                          <img src="./call.png" alt="call info">
+                      </div>
+                      <div>
+                         <p class="w-[112px] h-[28px] gap-0 font-yekanBakhFaNum text-[18px] font-semibold leading-[27.9px] text-left text-[#070D31]"> 
+                          
+                            09124567899
+  
+                         </p>
+                      </div>
+                     
+                  </div>
+                  <div class="main__right__top__4 flex flex-row  w-full max-w-[470px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] bg-white"> 
+                      <div>
+                          <img src="./sms.jpg" alt="emailinfo" >
+                      </div>
+                      <div>
+                          <p class=" gap-0 font-poppins text-[18px] font-medium leading-[27px] text-left text-[#070D31]">
+                              queralist@gmail.com
+                          </p>
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+            
+              <div class="main__right__botton flex flex-row  justify-between w-[328px] h-14 p-3 px-8 gap-4 rounded-tl-[12px] border-t border-[#f5f6f8] shadow-[0_4px_63px_0_rgba(0,0,0,0.03)] "> 
+                 
+                  <img src="./mark-github.png" alt="github">
+                  <img src="./twitter.jpg" alt="twitter">
+                  <img src="./linkedin.jpg" alt="linkedin">
+              </div>
+      
+          </div>
+          
+          </div>
+        </div>
+      </main>
+    <main class="  justify-center align-center main hidden sm:hidden md:hidden lg:flex">
+      <div class="allmain flex flex-row w-[1070px] h-[686px] top-[180px] left-[160px] p-[40px] px-[32px] gap-[32px] rounded-[24px] border-t border-l bg-white border border-[#F5F6F8] shadow-md justify-between" >
         <div class="main__left   flex flex-col w-[471px] h-full max-h-[606px] gap-0 justify-between" dir="rtl" >
             
                 <div class="main__left__ flex flex-row w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between" dir="rtl">
                    
                 <div>
-                    <label >:نام </label><br>
+                    <label  class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[27px] h-[25px] gap-0 text-[#070D31]">نام :
+
+                    </label><br>
                     <input type="text" class="w-[223px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300" id="fname" name="fname" placeholder="نام شما" dir="rtl">
                 </div> 
                    
                    <div>
-                    <label for="lname">:نام خانوادگی</label><br>
+                    <label class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[94px] h-[25px] gap-0 text-[#070D31]" for="lname">نام خانوادگی:
+
+                    </label><br>
                     <input type="text"  class="w-[223px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300" id="lname" name="lname" placeholder="نام خانوادگی شما " dir="rtl">
                 </div>
                     
                 </div>
                 <div class="main__left__2 ">
-                    <label for="email">:ایمیل</label><br>
+                    <label for="email" class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[42px] h-[25px] gap-0 text-[#070D31]"> 
+                        ایمیل:
+
+                    </label><br>
                     <input type="text" class="w-full max-w-[471px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l border-gray-300 " id="email" name="email" placeholder="ایمیل" dir="rtl"><br>
                 </div>
                 <div class="main__left__3 ">
-                    <label for="phonenumber">:شماره تماس</label><br>
+                    <label for="phonenumber" class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[89px] h-[25px] gap-0 text-[#070D31]">شماره تماس
+                    :</label><br>
                     <input type="tel" id="number" class="w-full max-w-[471px] h-[56px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l  border-gray-300" name="phonenumber" placeholder="شماره تماس شما" dir="rtl"><br>
                 </div>
                 <div class="main__left__4 ">
-                    <label for="message">متن</label><br>
+                    <label for="message" class="font-yekan text-base font-semibold leading-[24.8px] text-left w-[32px] h-[25px] gap-0 text-[#070D31]">متن:</label><br>
                 <textarea  class="w-full max-w-[471px] h-[136px] pt-[16px] gap-[8px] rounded-tl-[6px] border-t border-l  border border-gray-300" id="message" name="message" rows="4" cols="20" placeholder="متن شما" dir="rtl"></textarea><br>
                 </div>
                 <div class="main__left__5 ">
-                    <input type="submit" class="w-full max-w-[471px] h-[56px] p-[8px] px-[24px] gap-[8px] rounded-tl-[6px] bg-blue-600" value="ارسال پیام" >
+                    <input type="submit" class="   p-[8px]  gap-[8px] rounded-[6px] bg-blue-600  font-yekan text-lg font-bold leading-[27.9px]  w-[471px] h-14 py-2 px-6   text-white " value="  ارسال پیام" >
               </div>
               
         </div>
-        <div class="main__right flex flex-col w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between" dir="rtl">
+        <div class="main__right flex flex-col w-full max-w-[470px] h-full max-h-[606px] gap-0 justify-between relative" dir="rtl">
             <div class="main__right__top w-full max-w-[470px] h-auto gap-8">
                  <div class="main__right__top__1 w-[467px] h-auto gap-[12px]">
                     <p class="w-[197px] h-[72px] gap-0 font-abarMidFaNum text-[40px] font-extrabold leading-[72px] text-center text-[#070D31]">تماس با من </p>
@@ -80,10 +203,10 @@
                 </div>
             </div>
           
-            <div class="main__right__botton flex flex-row  w-auto max-w-[160px] h-auto max-h-[32px] gap-[32px]  justify-end">
-                <img src="./linkedin.jpg" alt="linkedin">
-                <img src="./twitter.jpg" alt="twitter">
+            <div class="main__right__botton flex flex-row   w-auto max-w-[160px] h-auto max-h-[32px] gap-[32px]  absolute bottom-0 right-0 ">
                 <img src="./mark-github.png" alt="github">
+                <img src="./twitter.jpg" alt="twitter">
+                <img src="./linkedin.jpg" alt="linkedin">
             </div>
     
         </div>
@@ -91,51 +214,158 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="  block sm:block  md:hidden lg:hidden  flex-col justify-center bg-white " >
+        
+        <div class=" flex flex-col justify-center  "  >
+            <div class="footer__description   py-2 px-0 gap-0 justify-between text-center ">   
+                  کوئرالیست
+            
+            </div>
+                
+            <div class="footer__middle flex  justify-center h-[352px] top-[1293px] left-[200px] gap-[22px]"   dir="rtl" >
+                    
+                    <div class="footer__middle__right justify-center  pr-0 gap-4 text-right w-[340px] " dir="rtl">
+                       <p class="    font-yekanBakhFaNum text-[16px] font-extrabold  text-start  text-[#242424] " dir="rtl" >
+                        باما در ارتباط باش </p>
+                       <p class="   font-yekanBakhFaNum text-[16px] font-normal   text-[#242424] text-start" dir="auto">
+                        اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
+                    
+                        <div class="  relative border-solid border-2 border-gray-100  gap-2    w-[340px]" >
+                            <input type="email "  value="ایمیل" class=" font-yekan text-sm font-normal leading-text-right text-gray-500   w-[320px] h-[40px]  "  >   
+                            <button class=" absolute rounded-md bg-[#037FFF] font-yekan text-sm  text-right  text-white  left-0 g-[10px] px-4 py-2.5
+                            " dir="ltr">ارسال</button> 
+                                
+                        </div>
+                        <div class="flex frex-row">
+                            <div class="footer__middle__right__3 footer__middle__right__1  flex flex-col justify-between  align-middle" lang="fa-IR">
+                                <div class="rounded-full">
+                                    <img src="./location-2.png" class=" rounded-full w-10 h-10 pt-3 gap-2  mx-10 "  alt="locatin">
+                               
+                                </div>
+                                <div class>
+                                    <p class="font-yekan  text-xs font-normal leading-4 text-right text-[#242424] w-[124px] h-[64px]  gap-2 " >
+                                        آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
+                                        </p>
+                                </div>
+                                 
+                                
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="footer__middle__left flex flex-col justify-between "> 
+
+                                    <div class="footer__middle__right__1   p-[29px_16px] rounded-tl-lg border border-[#f5f6f8] bg-white flex flex-row " lang="fa-IR">
+                                        <div class="pt-3 gap-2  h-11 w-11 rounded-full "> 
+
+                                            <img src="./call-2.png" class="w-4  h-4  " alt=" تلفن">
+                                            
+                                        </div>
+                                        
+                                        <div>
+                                            <p class="font-yekan-bakh-fanum text-sm text-right   text-black">
+                                                تلفن پشتیبانی :<br>021-44445566
+                                     
+                                           
+                                           </p>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="footer__middle__right__2 footer__middle__right__1    flex flex-row "  lang="fa-IR"> 
+                                        <div class=" w-11  h-10   rounded-full pt-3 gap-2">
+                                            <img src="./fax-2.png" class=" w-4  h-4  " alt="فکس">
+                                        </div>
+                                        
+                                      <p class="font-yekan-bakh-fanum text-sm text-right text-black text-nowrap">
+                                         فکس : <br> 021-44445566
+                                        
+                                      </p>  
+                                        
+                                    </div>
+                                    
+                                </div>
+                                     
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="footer__end flex justify-center shrink " > 
+                    <div class="   w-[404px] h-[54px] px-4 gap-4"> 
+                        <div class="font-yekan text-sm font-normal leading-[21.7px] text-right w-[404px] h-[22px] gap-0 text-gray-700">
+                            حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
+
+                          </div>
+                          
+                    </div>
+                    
+               </div>
+   
+        </div>
+    </footer>
+
+    <footer class=" hidden sm:hidden md:hidden lg:flex justify-center  ">
         <div class=" flex flex-col w-[1440px] h-[378px] top-[937px] left-[-1px] p-[0px 451px] gap-12 rounded-[5px 0px 0px 0px] ">
             <div class="footer__description  flex align-center justify-center flex-row ">
                 
                 <div class="text-20 font-semibold leading-31  border-solid  border-gray-700 transform  " >
                        
-                        کوئرالیست
+                  کوئرالیست
                 </div>
+                
+
             </div>
                 
             <div class="footer__middle flex flex-row  w-[1440px] h-[167px] p-[0px 160px] gap-[0px] justify-between  " dir="auto">
-                    <div class="footer__middle__left">
-                        <div class="footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex " lang="fa-IR">
+                    <div class="footer__middle__left flex flex-col justify-between">
+                        <div class="footer__middle__right__1    flex w-[234px] h-6 gap-4 " lang="fa-IR">
                             <img src="./faxs.png" alt="فکس">
+                           <p class="font-yekan-bakh-fanum text-sm text-right w-36 h-6 gap-0  text-black">
                             فکس : 44445566-021
                         
+                           </p>
                         </div>
-                        <div class="footer__middle__right__2 footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex" lang="fa-IR"> 
+                        <div class="footer__middle__right__2 footer__middle__right__1     w-[234px] h-[24px] gap-4 flex flex-row" lang="fa-IR"> 
                             <img src="./call.png" alt=" تلفن">
-                            تلفن پشتیبانی:44445566-021
+
+                          <p class="font-yekan-bakh-fanum text-sm text-right w-36 h-6 gap-0  text-black">
+                             تلفن پشتیبانی :44445566-021
+                          </p>  
                             
                         </div>
-                        <div class="footer__middle__right__3 footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex " lang="fa-IR">
+                        <div class="footer__middle__right__3 footer__middle__right__1  w-[329px] h-12 gap-4 flex flex-row bg-white " lang="fa-IR">
+                            
                             <img src="./location.jpg" alt="locatin">
+                            <p class="font-yekan text-sm font-normal bg-white text-black text-right flex ">
                             آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
+                            </p>
                             
                         </div>
                     </div>
                     <div class="footer__middle__right">
-                        باما در ارتباط باش 
-                        <p>اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
-                        <div class=" border-solid border-2 border-gray-100">
-                            <input type="email "  class=""  >   
-                            <button class="bg-indigo-500 rounded-mg  ">ارسال</button> 
-                                
-                        </div>
+                       <p class="w-[120px] h-[25px] gap-0 transform rotate-0 font-yekanBakhFaNum text-[16px] font-extrabold leading-[24.8px] text-right text-[#242424]">
+                        باما در ارتباط باش </p>
+                        <p class="w-[334px] h-[50px] gap-0 transform rotate-0 font-yekanBakhFaNum text-[16px] font-normal leading-[24.8px] text-right text-[#242424]">
+                            اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
+                       
+                            <div class="  relative border-solid border-2 border-gray-100  gap-2    w-[340px]" >
+                                <input type="email "  value="ایمیل" class=" font-yekan text-sm font-normal leading-text-right text-gray-500   w-[320px] h-[40px]  "  >   
+                                <button class=" absolute rounded-md bg-[#037FFF] font-yekan text-sm  text-right  text-white  left-0 g-[10px] px-4 py-2.5
+                                " dir="ltr">ارسال</button> 
+                                    
+                            </div>
                              
                         
                     </div>
                     
                 </div>
-                <div class="footer__end"> 
-                    <div class="flex align-center justify-center"> 
-                        حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
-   
+                <div class="footer__end flex justify-center shrink " dir="rtl"> 
+                    <div class="   w-[404px] h-[54px] px-4 gap-4"> 
+                        <div class="font-yekan text-sm font-normal leading-[21.7px] text-right w-[404px] h-[22px] gap-0 text-gray-700">
+                            حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
+
+                          </div>
+                          
                     </div>
                     
                </div>

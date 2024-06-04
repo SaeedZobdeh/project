@@ -3,61 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
     <script src="https://cdn.tailwindcss.com"> </script>
     <title>Document</title>
 </head>
-<body >
+<body class="flex flex-col" >
+    <HEader dir="rtl">
+        
+        <nav id="header_navbar" class="flex justify-between  px-20 mt-[2vh]   sm:hidden md:hidden lg:flex" >
+            <div id="header_navbar_list" class="flex justify-center text-center mt-[1.3vh]">
+                
+                <a href="./main.html" class="font-bold ml-20 hover:text-[#2C7EF8] text-[20px]">کوئرا لیست</a>
+                <a href="#" class="ml-20 text-[#666666]  hover:text-[#2C7EF8] text-[16px]">صفحه اصلی</a>
+                <a href="#" class="ml-20 text-[#666666]  hover:text-[#2C7EF8] text-[16px]" >درباره ما</a>
+                <a href="#" class="ml-20 text-[#666666] hover:text-[#2C7EF8] text-[16px]">ارتباط با ما</a>
+
+            </div>
+            <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh]">
+                <button type="button" class="text-center rounded-lg border-solid text-white border-[#2C7EF8] bg-[#2C7EF8]  ml-[2vh]  border-x-[30px] border-y-[8px] h-12 ">ورود به اپلیکیشن</button>
+                <a href=""><img src="./assets/svg/Frame 1000005337.png" alt="darkmode"></a>
+            </div>
+        </nav> 
+    </HEader>
+     <main class="bg-white  flex justify-center "> 
+        <div class=" flex sm:flex  md:hidden  lg:hidden justify-center align-middle flex-col bg-white dark:bg-[rgba(11, 25, 45, 1)]">
+            <div class="main_iamge w-[328px] h-[350px] top-[73px] left-[16px] rounded-tl-[24px]">
+                <img src="./Frame 427321285.jpg" class=" w-[328px] h-[350px] top-[73px] left-[16px] p-[32px_40px_32px_40px]" alt="محمد محمدی">
+            </div>
+            <div class="w-[328px] h-[509px] top-[447px] left-[16px] gap-[16px]">
+                <div class="main-aboutme flex flex-col justify-center ">
+                    <div class="aboutme font-abar-mid-fanum text-2xl font-bold text-blue-700   text-center">درباره من <br></div>
+                    
+                    
+                    <div class="name  font-abar-mid-fanum text-2xl font-normal leading-[57.6px] text-gray-500  text-center">محمد محمدی</div>
+                </div>
+                <div class="main-introduce text-center text-wrap w-[328px] h-[392px] p-[16px] pt-0 gap-[8px] rounded-tl-[16px] rounded-tr-none rounded-br-none rounded-bl-none border border-[rgba(245,246,248,1)] bg-[rgba(255,255,255,1)] shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)] ">
+                    <p >کاربران اندروید میتوانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند.همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم افزار از اپل استور اپل می توانند از نسخه .مبتنی بر وب آن استفاده کرد
+                    کاربران اندروید میتوانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند.همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم افزار از اپل استور اپل می توانند از نسخه .مبتنی بر وب آن استفاده کرد </p>
+                    
+                    <p>کاربران اندروید میتوانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند.همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم افزار از اپل استور اپل می توانند از نسخه .مبتنی بر وب آن استفاده کرد </p>
+                
+                </div>
+            </div>
+           
+            <div class="main-info block ">
+                
+                <div class="main__left__text  flex  flex-row justify-center align-center   "  >
+
+                    <div class="flex flex-col    ">
+                        <div class="main__left__text__1  w-[156px] h-[90px] top-[980px] left-[16px] p-[16px] py-[16px] px-[12px] gap-[8px] rounded-tl-[16px] rounded-tr-none rounded-br-none rounded-bl-none border border-[rgba(245,246,248,1)] bg-[rgba(255,255,255,1)] dark:bg-[rgba(14, 30, 52, 1)] shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)] ">
+                          
+                           <p class="text-blue-900 font-abar-mid-fanum  font-bold text-right text-lg">
+                            تهران
+                        </p>
+                        <br>
+                        <p  class="font-yekan-bakh-fanum text-gray-700 text-right text-sm">
+                            محل زندگی
+
+                        </p>
+                        
+                        </div>
+                        <div class="main__left__text__2 w-[156px] h-[90px] top-[1086px] left-[188px] p-[16px] py-[16px] px-[12px] gap-[8px] rounded-tl-[16px] rounded-tr-none rounded-br-none rounded-bl-none border border-[rgba(245,246,248,1)] bg-[rgba(255,255,255,1)]  shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)] dark:bg-[rgba(14, 30, 52, 1)]">
+                            <p class="text-blue-900 font-abar-mid-fanum  font-bold text-right text-lg">
+                                +10
+                            </p>
+                            
+                            <br>  
+                           <p  class="font-yekan-bakh-fanum text-gray-700 text-right text-sm">
+                            مشارکت در پروژه‌ 
+
+                           </p>
+                            
+                        </div>
+                    </div>
+                        
+                    
+                  <div class="flex flex-col ">
+                    <div class="main__left__text__3 w-[156px] h-[90px] top-[980px] left-[188px] p-[16px] py-[16px] px-[12px] gap-[8px] rounded-tl-[16px] rounded-tr-none rounded-br-none rounded-bl-none border border-[rgba(245,246,248,1)] bg-[rgba(255,255,255,1)] shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)] dark:bg-[rgba(14, 30, 52, 1)]">
+                     
+                     
+                        <div class="flex flex-col">
+                          
+                             
+
+                                 <div class=" " dir="rtl">
+                                         <p class="text-blue-900 font-abar-mid-fanum  font-bold text-right text-lg   ">
+                                               1379
+                                            </p>
+                                    </div>
+                       
+                              
+                                <div class="w-132 h-16 ">
+                                    <p class="font-yekan-bakh-fanum text-gray-700 text-right text-sm  ">سال تولد</p>
     
-    <header>
-        <div id="header_nav_list">
-            <div id="header_nav_list_text">
-                <h4>کوئرا لیست</h4>
+                                </div>
+                               
+                              
+                            
+                            
+                        </div>
+                       
+                        </div>
+                        <div class="main__left__text__4 w-[156px] h-[90px] top-[1086px] left-[188px] p-[16px] py-[16px] px-[12px] gap-[8px] rounded-tl-[16px] rounded-tr-none rounded-br-none rounded-bl-none border border-[rgba(245,246,248,1)] bg-[rgba(255,255,255,1)] shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)] dark:bg-[rgba(14, 30, 52, 1)]">
+                            <div></div>
+                            
+                           <p class="text-blue-900 font-abar-mid-fanum  font-bold text-right text-lg">
+                            3.5  
+
+                        </p>
+                        <p  class="font-yekan-bakh-fanum text-gray-700 text-right text-sm">  سال تجربه کار 
+                             </p >  
+                        
+                        </div>
+    
+                        
+
+                  </div>
+                    
+                    
+
+                        
+                    
+                    
+                </div>
+
             </div>
-          <nav id="header_nav"></nav>
-            <div id="header_nav_list_link">
-                <a href="#">صفحه اصلی</a>
-                <a href="#">درباره ما</a>
-                <a href="#">ارتباط با ما</a>
-            </div>
-            
-        </div>
-        <div id="header_nav_button">
-            <div id="header_nav_button_login">
-                
-                    <button>ورود به اپلیکیشن</button>
-                
-                    <button>mode</button>
-                
-                
-            </div>
+
         </div>
 
-
-    </header>
-    <main class="bg-white  "> 
-        <div class="main  flex flex-col-2 w-[1120px] h-[686px] top-45 left-40 gap-6  justify-center  grow-0 " dir="auto">
-            <div class="main__left flex  bg-gray-100 flex-col  grow w-1/2  w-[548px] h-screen top-180 left-160 gap-6" >
+        <div class="main hidden sm:hidden md:hidden lg:flex flex-col-2 w-[1120px] h-[686px] top-45 left-40 gap-6  justify-center  grow-0 " dir="auto">
+            <div class="main__left flex   flex-col  grow  w-[548px] h-screen top-180 left-160 gap-6" >
                 <div class="main__left__image " dir="ltr">
                     <img src="./Frame 427321285.jpg" alt="محمد محمدی">
                 </div>
                 
-                <div class="main__left__text  flex  flex-row flex-wrap justify-center align-center  w-[548px] h-[312px] p-[32px] gap-[24px] rounded-[24px] border-t-[1px] " dir="rtl" >
+                <div class="main__left__text  flex  flex-row justify-center align-center  w-[548px] h-[312px] p-y-8 gap-6 rounded-tl-2xl border-t border-[rgba(245,246,248,1)] bg-white shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)]  " dir="rtl" >
 
-                    <div class="flex flex-col w-1/2">
-                        <div class="main__left__text__1 bg-white  top-28.5 left-128 w-230 h-112">
+                    <div class="flex flex-col w-1/2   ">
+                        <div class="main__left__text__1 bg-white  top-28.5 left-128 w-230 h-112 ">
+                          <p class="font-yekan text-4xl font-semibold leading-[49.6px] text-center text-[#070D31]">
                             1379
+                          </p>
+                          
+                            
                             <br>
-                            سال تولد 
-                        
-                        
-                       
+                           <p class="font-yekan text-lg font-normal leading-[27.9px] text-center text-gray-700">سال تولد</p>
+
                             
                         </div>
                         <div class="main__left__text__2 bg-white  top-28.5 left-128 w-230 h-112">
+                            <p class="font-yekan text-4xl font-semibold leading-[49.6px] text-center text-[#070D31]">
+                                3.5  
+
+                            </p>
+                            <p  class="font-yekan text-lg font-normal leading-[27.9px] text-center text-gray-700">  سال تجربه کار 
+                                 </p >  
                             
-                            سال تجربه کار 
-                            <br>
-                            3.5  
+                            
                         </div>
                     </div>
                         
@@ -65,21 +167,32 @@
                     
                   <div class="flex flex-col ">
                     <div class="main__left__text__3 bg-white top-28.5 left-128 w-230 h-112">
-                        تهران
-                        <br>
-                        محل زندگی
-
+                        <p class="font-yekan text-4xl font-semibold leading-[49.6px] text-center text-[#070D31]">
+                            تهران
+                        </p>
                         
+                        <br>
+                        <p  class="font-yekan text-lg font-normal leading-[27.9px] text-center text-gray-700">
+
+                            محل زندگی
+
+                        </p>
                         
                         
                         
                         </div>
                         <div class="main__left__text__4 bg-white top-28.5 left-128 w-230 h-112">
-                            +10
-                            <br>
-                            مشارکت در پروژه‌ 
+                            <p class="font-yekan text-4xl font-semibold leading-[49.6px] text-center text-[#070D31]">
+                                +10
+                            </p>
                             
-                           
+                            <br>
+                            
+                            
+                           <p  class="font-yekan text-lg font-normal leading-[27.9px] text-center text-gray-700">
+                            مشارکت در پروژه‌ 
+
+                           </p>
                         </div>
     
                         
@@ -94,7 +207,8 @@
                 </div>
             </div>
 
-            <div class="main__right bg-gray-100 flex flex-col  flex-wrap grow w-1/2 w-[548px] h-screen top-180 left-160 gap-6 " dir="rtl" >
+            <div class="main__right  flex flex-col  flex-wrap grow  top-180 left-160 gap-6 
+            w-[548px] h-full p-8 rounded-tl-2xl border-t  bg-white border border-[rgba(245,246,248,1)] shadow-[0px_4px_63px_0px_rgba(0,0,0,0.03)] " dir="rtl" >
                 <div class="w-468px h-526px grid gap-24">
                 <div class="w-auto h-auto gap-3 ">
                    
@@ -118,55 +232,167 @@
 
         </div>
     </main>
-    <footer >
-        <div class=" flex flex-col w-[1440px] h-[378px] top-[937px] left-[-1px] p-[0px 451px] gap-12 rounded-[5px 0px 0px 0px] ">
-            <div class="footer__description   ">
-                <div class=" flex align-center justify-center text-20 font-semibold leading-31  border-solid  border-gray-700 transform " >
-                        کوئرالیست
-                </div>
+
+
+
+    <footer class="  block sm:block  md:hidden lg:hidden  flex-col justify-center " >
+        
+        <div class=" flex flex-col justify-center  "  >
+            <div class="footer__description   py-2 px-0 gap-0 justify-between text-center ">   
+                  کوئرالیست
+            
             </div>
                 
-            <div class="footer__middle flex flex-row  w-[1440px] h-[167px] p-[0px 160px] gap-[0px] justify-between  " dir="auto">
-                    <div class="footer__middle__left">
-                        <div class="footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex " lang="fa-IR">
-                            <img src="./faxs.png" alt="فکس">
-                            فکس : 44445566-021
-                        
-                        </div>
-                        <div class="footer__middle__right__2 footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex" lang="fa-IR"> 
-                            <img src="./call.png" alt=" تلفن">
-                            تلفن پشتیبانی:44445566-021
-                            
-                        </div>
-                        <div class="footer__middle__right__3 footer__middle__right__1   font-yekan-bakh-fanum text-14 font-normal leading-21.7 text-right flex " lang="fa-IR">
-                            <img src="./location.jpg" alt="locatin">
-                            آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
-                            
-                        </div>
-                    </div>
-                    <div class="footer__middle__right">
-                        باما در ارتباط باش 
-                        <p>اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
-                        <div class=" border-solid border-2 border-gray-100">
-                            <input type="email "  class=""  >   
-                            <button class="bg-indigo-500 rounded-mg  ">ارسال</button> 
+            <div class="footer__middle flex  justify-center h-[352px] top-[1293px] left-[200px] gap-[22px]"   dir="rtl" >
+                    
+                    <div class="footer__middle__right justify-center  pr-0 gap-4 text-right w-[340px] " dir="rtl">
+                       <p class="    font-yekanBakhFaNum text-[16px] font-extrabold  text-start  text-[#242424] " dir="rtl" >
+                        باما در ارتباط باش </p>
+                       <p class="   font-yekanBakhFaNum text-[16px] font-normal   text-[#242424] text-start" dir="auto">
+                        اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
+                    
+                        <div class="  relative border-solid border-2 border-gray-100  gap-2    w-[340px]" >
+                            <input type="email "  value="ایمیل" class=" font-yekan text-sm font-normal leading-text-right text-gray-500   w-[320px] h-[40px]  "  >   
+                            <button class=" absolute rounded-md bg-[#037FFF] font-yekan text-sm  text-right  text-white  left-0 g-[10px] px-4 py-2.5
+                            " dir="ltr">ارسال</button> 
                                 
                         </div>
-                             
+                        <div class="flex frex-row">
+                            <div class="footer__middle__right__3 footer__middle__right__1  flex flex-col justify-between  align-middle" lang="fa-IR">
+                                <div class="rounded-full">
+                                    <img src="./location-2.png" class=" rounded-full w-10 h-10 pt-3 gap-2  mx-10 "  alt="locatin">
+                               
+                                </div>
+                                <div>
+                                    <p class="font-yekan  text-xs font-normal leading-4 text-right text-[#242424] w-[124px] h-[64px]  gap-2 " >
+                                        آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
+                                        </p>
+                                </div>
+                                 
+                                
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="footer__middle__left flex flex-col justify-between">
+
+                                    <div class="footer__middle__right__1   p-[29px_16px] rounded-tl-lg border border-[#f5f6f8] bg-white flex flex-row " lang="fa-IR">
+                                        <div class="pt-3 gap-2  h-11 w-11 rounded-full "> 
+
+                                            <img src="./call-2.png" class="w-4  h-4  " alt=" تلفن">
+                                            
+                                        </div>
+                                        
+                                        <div>
+                                            <p class="font-yekan-bakh-fanum text-sm text-right   text-black">
+                                                تلفن پشتیبانی :<br>021-44445566
+                                     
+                                           
+                                           </p>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="footer__middle__right__2 footer__middle__right__1    flex flex-row" lang="fa-IR"> 
+                                        <div class=" w-11  h-10   rounded-full pt-3 gap-2">
+                                            <img src="./fax-2.png" class=" w-4  h-4  " alt="فکس">
+                                        </div>
+                                        
+                                      <p class="font-yekan-bakh-fanum text-sm text-right text-black text-nowrap">
+                                         فکس : <br> 021-44445566
+                                        
+                                      </p>  
+                                        
+                                    </div>
+                                    
+                                </div>
+                                     
+                            </div>
+                        </div>
+                        
                         
                     </div>
                     
                 </div>
-                <div class="footer__end"> 
-                    <div class="flex align-center justify-center"> 
-                        حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
-   
+                <div class="footer__end flex justify-center shrink " > 
+                    <div class="   w-[404px] h-[54px] px-4 gap-4"> 
+                        <div class="font-yekan text-sm font-normal leading-[21.7px] text-right w-[404px] h-[22px] gap-0 text-gray-700">
+                            حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
+
+                          </div>
+                          
                     </div>
                     
                </div>
    
         </div>
+    </footer>
+
+    <footer class=" hidden sm:hidden md:hidden lg:flex justify-center  ">
         
+        <div class=" flex flex-col w-[1440px] h-[378px] top-[937px] left-[-1px] p-[0px 451px] gap-12 rounded-[5px 0px 0px 0px] ">
+            <div class="footer__description  flex align-center justify-center flex-row ">
+                
+                <div class="text-20 font-semibold leading-31  border-solid  border-gray-700 transform  " >
+                       
+                  کوئرالیست
+                </div>
+                
+
+            </div>
+                
+            <div class="footer__middle flex flex-row  w-[1440px] h-[167px] p-[0px 160px] gap-[0px] justify-between  " dir="auto">
+                    <div class="footer__middle__left flex flex-col justify-between">
+                        <div class="footer__middle__right__1    flex w-[234px] h-6 gap-4 " lang="fa-IR">
+                            <img src="./faxs.png" alt="فکس">
+                           <p class="font-yekan-bakh-fanum text-sm text-right w-36 h-6 gap-0  text-black">
+                            فکس : 44445566-021
+                        
+                           </p>
+                        </div>
+                        <div class="footer__middle__right__2 footer__middle__right__1     w-[234px] h-[24px] gap-4 flex flex-row " lang="fa-IR"> 
+                            <img src="./call.png" alt=" تلفن">
+
+                          <p class="font-yekan-bakh-fanum text-sm text-right w-36 h-6 gap-0  text-black text-nowrap">
+                             تلفن پشتیبانی:44445566-021
+                          </p>  
+                            
+                        </div>
+                        <div class="footer__middle__right__3 footer__middle__right__1  w-[329px] h-12 gap-4 flex flex-row " lang="fa-IR">
+                            
+                            <img src="./location.jpg" alt="locatin">
+                            <p class="font-yekan text-sm font-normal leading-[24.65px] text-right flex ">
+                            آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="footer__middle__right">
+                       <p class="w-[120px] h-[25px] gap-0 transform rotate-0 font-yekanBakhFaNum text-[16px] font-extrabold leading-[24.8px] text-right text-[#242424]">
+                        باما در ارتباط باش </p>
+                        <p class="w-[334px] h-[50px] gap-0 transform rotate-0 font-yekanBakhFaNum text-[16px] font-normal leading-[24.8px] text-right text-[#242424]">
+                            اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
+                       
+                            <div class="  relative border-solid border-2 border-gray-100  gap-2    w-[340px]" >
+                                <input type="email "  value="ایمیل" class=" font-yekan text-sm font-normal leading-text-right text-gray-500   w-[320px] h-[40px]  "  >   
+                                <button class=" absolute rounded-md bg-[#037FFF] font-yekan text-sm  text-right  text-white  left-0 g-[10px] px-4 py-2.5
+                                " dir="ltr">ارسال</button> 
+                                    
+                            </div>
+                             
+                        
+                    </div>
+                    
+                </div>
+                <div class="footer__end flex justify-center shrink " dir="rtl"> 
+                    <div class="   w-[404px] h-[54px] px-4 gap-4"> 
+                        <div class="font-yekan text-sm font-normal leading-[21.7px] text-right w-[404px] h-[22px] gap-0 text-gray-700">
+                            حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
+
+                          </div>
+                          
+                    </div>
+                    
+               </div>
+   
+        </div>
     </footer>
 </body>
 </html>
