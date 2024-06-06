@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
-   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class=" dark:text-white">
     
@@ -15,34 +16,34 @@
     <header id="header" class=" dark:bg-black bg-white">
 
         <div id="header_navbar" class="flex justify-between px-20 pt-4 mb-[2vh] bg">
-            <div id="header_navbar_list" class="flex mt-[1.3vh]">
+            <div id="header_navbar_list" class="mt-[1.3vh] w-full">
                 
-               <nav class="flex gap-8 ">
-                <button class="lg:hidden"><i class="fas fa-bars"></i></button>
+               <nav class="flex gap-8 w-full">
+                <button class="lg:hidden block px-4 dark:text-white"><i class="fas fa-bars"></i></button>
                 
-                <a href="./main.html" class="font-bold hover:text-[#2C7EF8] text-base lg:mx-auto">کوئرا لیست</a>
+                <a href="./main.html" class="font-bold hover:text-[#2C7EF8] text-base lg:flex-initial flex-1 text-center">کوئرا لیست</a>
                 
                 <a href="./main.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">صفحه اصلی</a>
                 <a href="./aboutme.html" class="text-base hover:text-[#2C7EF8] lg:block hidden" >درباره من</a>
-                <a href="#" class="text-base hover:text-[#2C7EF8] lg:block hidden">ارتباط با ما</a>
+                <a href="./contactus.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">ارتباط با ما</a>
                </nav>
 
             </div>
            <div class="lg:block hidden">
-            <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh]">
-                <a href="./todolist.html"><button type="button" class="text-center rounded-lg border-solid text-white border-[#2C7EF8] bg-[#2C7EF8]  ml-[2vh]  border-x-[30px] border-y-[8px] h-12 ">ورود به اپلیکیشن</button></a>
+            <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh] w-[300px]">
+                <a href="./todolist.html"><button type="button" class="text-center rounded-lg text-white border-[#2C7EF8] bg-[#2C7EF8] px-4 ml-[2vh]  h-12 ">ورود به اپلیکیشن</button></a>
                 <a href=""><img id="theme-button" alt="darkmode"></a>
             </div>
            </div>
         </div> 
         <div class="header_image bg-gradient-to-b from-[#EBF3FF] to-[#ffffff]dark:bg-gradient-to-b dark:from-[#1a3358a2] dark:to-[#1A202C]">
             <div class="header_image_title flex flex-col justify-center text-center align-baseline items-center relative">
-                <img alt="Star_top" id="star-img1" class=" items-center absolute top-14 right-80" >
-                <P class="font-normal text-[46px] pt-32">تمرکز رو وارد زندگیت کن</P>
-                <h1 class="font-black text-[64px] mt-3">سمت اهدافت اوج بگیر</h1>
+                <img alt="Star_top" id="star-img1" class=" items-center absolute top-14 right-[20%]" >
+                <P class="font-normal text-[24px] lg:text-[44px] text-center mt-20">تمرکز رو وارد زندگیت کن</P>
+                <h1 class="font-black text-[28px] text-center lg:text-[64px]">سمت اهدافت اوج بگیر</h1>
                 <img src="./assets/svg/Vector 74.png" alt="line">
-                <img alt="Star_mid" id="star-img2" class="absolute left-52">
-                <p class="font-normal text-[20px] mt-[50px] leading-8 w-full lg:px-28 ">زمان در یک روز برای ما محدود است ، اما <span >مهمترین کار</span> این است که چگونه از آن استفاده کنیم.
+                <img alt="Star_mid" id="star-img2" class="absolute left-[20%]">
+                <p class="font-normal text-[12px] text-center lg:text-[20px] lg:px-28 mt-[50px] leading-8 w-full">زمان در یک روز برای ما محدود است ، اما <span >مهمترین کار</span> این است که چگونه از آن استفاده کنیم.
                     با اپلیکیشن کوئرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید.</p>
                 <div class="pt-8">
                     <a href="./todolist.html"><button type="button" class="ml-5 mb-20 border-x-[30px] border-y-[10px] border-solid text-white border-[#2C7EF8] bg-[#2C7EF8] text-center rounded-lg">ورود به اپلیکیشن</button></a>
@@ -69,26 +70,26 @@
             <div id="main_property_list" class="grid lg:grid-cols-4 grid-cols-2 py-[32px] gap-5">
                 <div class="flex flex-col justify-center items-center text-center border-[1px] dark:border-[#0B192D] dark:bg-[#0B192D] rounded-[25px] ">
                     <img id="Frame" class="mb-8 mt-10" alt="رابط کاربری جذاب">
-                    <h5 class="text-[20px] font-extrabold text-center leading-[36px]">رابط کاربری جذاب</h5>
-                    <p class="text-[14px] font-normal text-center leading-[30px] px-9 mb-8">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                    <h5 class="text-[12px] lg:text-[20px] font-extrabold text-center leading-[36px]">رابط کاربری جذاب</h5>
+                    <p class="text-[10px] lg:text-[14px] font-normal text-center leading-[30px] px-9 mb-8">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
                 </div>
 
                 <div class="flex flex-col justify-center items-center text-center border-[1px] dark:border-[#0B192D] dark:bg-[#0B192D] rounded-[25px]">
                     <img id="work" class="mb-8 mt-10" alt="قابلیت دسته بندی کارها">
-                    <h5  class="text-[20px] font-extrabold text-center leading-[36px]">قابلیت دسته بندی کارها</h5>
-                    <p class="text-[14px] font-normal text-center leading-[30px] px-9 mb-8">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                    <h5  class="text-[12px] lg:text-[20px] font-extrabold text-center leading-[36px]">قابلیت دسته بندی کارها</h5>
+                    <p class="text-[10px] lg:text-[14px] font-normal text-center leading-[30px] px-9 mb-8">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
                 </div>
 
                 <div class="flex flex-col justify-center items-center text-center border-[1px] dark:border-[#0B192D] dark:bg-[#0B192D] rounded-[25px]">
                     <img id="simple" class="mb-8 mt-10" alt="دسترسی آسان">
-                    <h5  class="text-[20px] font-extrabold text-center leading-[36px]">دسترسی آسان</h5>
-                    <p class="text-[14px] font-normal text-center leading-[30px] px-9 mb-8">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                    <h5  class="text-[12px] lg:text-[20px] font-extrabold text-center leading-[36px]">دسترسی آسان</h5>
+                    <p class="text-[10px] lg:text-[14px] font-normal text-center leading-[30px] px-9 mb-8">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
                 </div>
 
                 <div class="flex flex-col justify-center items-center text-center border-[1px] dark:border-[#0B192D] dark:bg-[#0B192D] rounded-[25px]">
                     <img id="online" class="mb-8 mt-10" alt="پشتیبانی آنلاین">
-                    <h5  class="text-[20px] font-extrabold text-center leading-[36px]">پشتیبانی آنلاین</h5>
-                    <p class="text-[14px] font-normal text-center leading-[30px] px-9 mb-8" >اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                    <h5  class="text-[12px] lg:text-[20px] font-extrabold text-center leading-[36px] lg:leading-[30px]">پشتیبانی آنلاین</h5>
+                    <p class="text-[10px] lg:text-[14px] font-normal text-center leading-[30px] px-9 mb-8" >اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
                 </div>
 
 
@@ -96,17 +97,17 @@
             
         </div>
         <div id="main_download" class="flex flex-col lg:flex-row lg:justify-center justify-center items-center mt-[10vh]">            
-            <div id="main_download_text" class="flex flex-col justify-center items-center gap-5">
-                <div class="lg:flex lg:flex-col lg:justify-center lg:items-center">
-                    <h5 class="text-[18px] text-right font-normal leading-[30px] inline ">اپلیکیشن اندروید و IOS</h5>
-                    <h2 class="text-[40px] text-right font-semibold leading-[70px] inline">دانلود اپلیکیشن</h2>
+            <div id="main_download_text" class="flex flex-col flex-1 justify-center items-center gap-5 m-10">
+                <div class="flex flex-col justify-center items-center">
+                    <h5 class="lg:font-semibold lg:text-[18px] font-normal text-[10px] text-center lg:text-right inline">اپلیکیشن اندروید و IOS</h5>
+                    <h2 class="lg:font-bold lg:text-[40px] lg:text-right inline font-semibold text-[20px] text-center">دانلود اپلیکیشن</h2>
                 </div>
                
-                <img id="group-img" alt="mobile app" class="top-9 lg:hidden w-[190px]">    
+                <img alt="mobile app" class="top-9 lg:hidden w-[190px] group-img-mobile">
               
                        
                 <div>
-                    <p class="text-[18px] text-right font-normal leading-[30px] "> 
+                    <p class="font-normal lg:text-[18px] text-[10px] text-center lg:text-justify "> 
                         کاربران اندروید میتوانند اپلیکیشن کوئرالیست را از استورهای 
                         معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر
                         دانلود نرم‌افزار از اپل‌استور میتوانند از نسخه مبتنی بر وب آن استفاده نمایند.
@@ -121,8 +122,8 @@
                 </div>
 
             </div>
-            <div>
-                <img src="./assets/img/Group 47490.png" alt="desktop app" class="lg:block hidden ">
+            <div class="flex-1">
+                <img alt="desktop app" class="lg:block hidden group-img-desktop">
             </div>
 
 
@@ -130,8 +131,8 @@
         </div>
         <div id="main_comment" class="container flex flex-col items-center justify-center mx-auto p-4 ">
             <div id="main_comment_text" class="text-center mb-14 mt-28">
-                <h4 class="text-[40px] font-bold leading-[72px] text-gray-800 dark:text-white pb-[32px]">نظرات کاربران</h4>
-                <p class="text-gray-700 dark:text-white">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم. </p>
+                <h4 class="font-semibold text-[20px] text-center lg:font-bold lg:text-[40px] text-gray-800 dark:text-white pb-[32px]">نظرات کاربران</h4>
+                <p class="text-gray-700 dark:text-white font-normal lg:text-[18px] text-[10px] text-center">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم. </p>
             </div>
 
             <div id="main_comment_user" class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -142,11 +143,11 @@
                         <div class="flex items-center mb-4">
                             <img src="./assets/user/user1.png" alt="user1" class="w-12 h-12 rounded-full mr-4">
                             <div class="mr-5">
-                                <h5 class="text-lg font-bold text-gray-800 dark:text-white">رویا ملکی</h5>
-                                <h6 class="text-sm text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
+                                <h5 class="font-bold text-[14px] lg:text-[15px] text-gray-800 dark:text-white">رویا ملکی</h5>
+                                <h6 class="lg:text-[14px] text-[12px] font-normal text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
                             </div>
                         </div>
-                        <p class="text-gray-700 mx-5 dark:text-white">
+                        <p class="text-gray-700 mx-5 dark:text-white font-light text-[12px] lg:text-[16px]">
                             تجربه من با کوئرالیست زندگی من رو تغییر داده است.من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرالیست
                             به ما این امکان را میدهد که باهوش‌تر ،سریعتر و سازماندهی شده تر زندگی کنیم و
                             هم همچنین همه چیز به گونه ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات
@@ -158,11 +159,11 @@
                         <div class="flex items-center mb-4">
                             <img src="./assets/user/user2.png" alt="user2" class="w-12 h-12 rounded-full mr-4">
                             <div class="mr-5">
-                                <h5 class="text-lg font-bold text-gray-800 dark:text-white">رویا ملکی</h5>
-                                <h6 class="text-sm text-gray-600 dark:text-white" >مهندسی نرم افزار دیجیکالا</h6>
+                                <h5 class="font-bold text-[14px] lg:text-[15px] text-gray-800 dark:text-white">رویا ملکی</h5>
+                                <h6 class="lg:text-[14px] text-[12px] font-normal text-gray-600 dark:text-white" >مهندسی نرم افزار دیجیکالا</h6>
                             </div>
                         </div>
-                        <p class="text-gray-700 mx-5 dark:text-white">
+                        <p class="text-gray-700 mx-5 dark:text-white font-light text-[12px] lg:text-[16px]">
                             تجربه من با کوئرالیست زندگی من رو تغییر داده است.من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرالیست
                             به ما این امکان را میدهد که باهوش‌تر ،سریعتر و سازماندهی شده تر زندگی کنیم.
                         </p>
@@ -175,11 +176,11 @@
                         <div class="flex items-center mb-4">
                             <img src="./assets/user/user3.png" alt="user3" class="w-12 h-12 rounded-full mr-4">
                             <div class="mr-5">
-                                <h5 class="text-lg font-bold text-gray-800 dark:text-white">رویا ملکی</h5>
-                                <h6 class="text-sm text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
+                                <h5 class="font-bold text-[14px] lg:text-[15px] text-gray-800 dark:text-white">رویا ملکی</h5>
+                                <h6 class="lg:text-[14px] text-[12px] font-normal text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
                             </div>
                         </div>
-                        <p class="text-gray-700 mx-5 dark:text-white">تجربه من با کوئرالیست زندگی من رو تغییر داده است.من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرالیست
+                        <p class="text-gray-700 mx-5 dark:text-white font-light text-[12px] lg:text-[16px]">تجربه من با کوئرالیست زندگی من رو تغییر داده است.من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرالیست
                             به ما این امکان را میدهد که باهوش‌تر ،سریعتر و سازماندهی شده تر زندگی کنیم.
                         </p>
                     </div>
@@ -188,11 +189,11 @@
                         <div class="flex items-center mb-4">
                             <img src="./assets/user/user4.png" alt="user4" class="w-12 h-12 rounded-full mr-4">
                             <div class="mr-5">
-                                <h5 class="text-lg font-bold text-gray-800 dark:text-white">رویا ملکی</h5>
-                                <h6 class="text-sm text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
+                                <h5 class="font-bold text-[14px] lg:text-[15px] text-gray-800 dark:text-white">رویا ملکی</h5>
+                                <h6 class="lg:text-[14px] text-[12px] font-normal text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
                             </div>
                         </div>
-                        <p class="text-gray-700 mx-5 dark:text-white">تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                        <p class="text-gray-700 mx-5 dark:text-white font-light text-[12px] lg:text-[16px]">تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
                     </div>
                 </div>
                 <!-- ستون سوم برای نظرات کاربران -->
@@ -202,11 +203,11 @@
                         <div class="flex items-center mb-4">
                             <img src="./assets/user/user5.png" alt="user5" class="w-12 h-12 rounded-full mr-4">
                             <div class="mr-5">
-                                <h5 class="text-lg font-bold text-gray-800 dark:text-white">رویا ملکی</h5>
-                                <h6 class="text-sm text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
+                                <h5 class="font-bold text-[14px] lg:text-[15px] text-gray-800 dark:text-white">رویا ملکی</h5>
+                                <h6 class="lg:text-[14px] text-[12px] font-normal text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
                             </div>
                         </div>
-                        <p class="text-gray-700 mx-5 dark:text-white">
+                        <p class="text-gray-700 mx-5 dark:text-white font-light text-[12px] lg:text-[16px]">
                             تجربه من با کوئرالیست زندگی من رو تغییر داده است.من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرالیست
                             به ما این امکان را میدهد که باهوش‌تر ،سریعتر و سازماندهی شده تر زندگی کنیم و
                             هم همچنین همه چیز به گونه ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات
@@ -218,11 +219,11 @@
                         <div class="flex items-center mb-4">
                             <img src="./assets/user/user6.png" alt="user6" class="w-12 h-12 rounded-full mr-4">
                             <div class="mr-5">
-                                <h5 class="text-lg font-bold text-gray-800 dark:text-white">رویا ملکی</h5>
-                                <h6 class="text-sm text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
+                                <h5 class="font-bold text-[14px] lg:text-[15px] text-gray-800 dark:text-white">رویا ملکی</h5>
+                                <h6 class="lg:text-[14px] text-[12px] font-normal text-gray-600 dark:text-white">مهندسی نرم افزار دیجیکالا</h6>
                             </div>
                         </div>
-                        <p class="text-gray-700 mx-5 dark:text-[#E6E6E6]">
+                        <p class="text-gray-700 mx-5 dark:text-white font-light text-[12px] lg:text-[16px]">
                             تجربه من با کوئرالیست زندگی من رو تغییر داده است.من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرالیست
                             به ما این امکان را میدهد که باهوش‌تر ،سریعتر و سازماندهی شده تر زندگی کنیم.
                         </p>
@@ -297,7 +298,7 @@
             </div>
           </div>
           <p
-            class="text-[14px] font-normal text-right text-[#666666] flex justify-center pt-2"
+            class="text-[14px] font-normal text-right text-[#666666] flex justify-center py-4"
           >
             تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
           </p>

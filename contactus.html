@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارتباط با من</title>
+    
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body class=" bg-white  text-white dark:bg-[#1A202C]">
+    <header class="dark:text-white">
+        
+      <div id="header_navbar" class="flex justify-between px-20 pt-4 mb-[2vh] bg">
+        <div id="header_navbar_list" class="mt-[1.3vh] w-full">
+            
+           <nav class="flex gap-8 w-full">
+            <button class="lg:hidden block dark:text-white"><i class="fas fa-bars"></i></button>
+            
+            <a href="./main.html" class="font-bold hover:text-[#2C7EF8] text-base lg:flex-initial flex-1 text-center">کوئرا لیست</a>
+            
+            <a href="./main.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">صفحه اصلی</a>
+            <a href="./aboutme.html" class="text-base hover:text-[#2C7EF8] lg:block hidden" >درباره من</a>
+            <a href="./contactus.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">ارتباط با ما</a>
+           </nav>
+
+        </div>
+       <div class="lg:block hidden">
+        <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh] w-[300px]">
+            <a href="./todolist.html"><button type="button" class="text-center rounded-lg text-white border-[#2C7EF8] bg-[#2C7EF8] px-4 ml-[2vh]  h-12 ">ورود به اپلیکیشن</button></a>
+            <a href=""><img src="./assets/svg/button-dark.png" id="theme-button" alt="darkmode"></a>
+        </div>
+       </div>
+    </div> 
+      </header>
+
+      <main class="contact flex flex-col md:m-10 md:px-12 md:py-10  md:gap-8 " >
+        <div class="contact__main dark:bg-[#0B192D]  gap-2 my-10 md:flex md:m-6 md:px-8 md:py-10  md:border md:rounded-3xl md:bordr-[#F5F6F8]">
+          <div class="contact__main-text flex flex-col justify-between items-center md:items-start flex-1">
+            <h1 class="font-bold tex-[24px] text-center md:font-bold md:text-[40px] md:text-right">تماس با‌ ما</h1>
+            <p class="font-normal tex-[14px] text-center w-[320px] dark:text-[#DEDEDE] md:text-[20px] md:text-right md:text-[#6F7076] md:w-[420px] ">
+                  چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+            </p>
+            <div class="flex md:hidden border dark:bg-[#0B192D] dark:border-[#0B192D] rounded-lg w-[328px] m-4 ">
+              <div class="contact__main-form flex flex-col gap-2 my-10 ">  
+                <form class="">
+                   <div class="flex p-2 gap-4">
+                      <div class="flex flex-col gap-1"> 
+                        <label for="firstname" class="font-semibold text-[12px] ">نام:</label>
+                        <input type="text" id="firstname" class="border rounded-md w-[140px] p-2  dark:bg-[#0B192D] border-[#E6E6E6]" placeholder="نام شما" />
+                      </div>
+                      <div class="flex flex-col  gap-1"> 
+                        <label for="firstname" class="font-semibold text-[12px] ">نام خانوادگی:</label>
+                        <input type="text" id="firstname" class="border rounded-md w-[140px] p-2  dark:bg-[#0B192D] border-[#E6E6E6] " placeholder="نام خانوادگی شما" />
+                      </div>
+                    </div>  
+                    <div class="flex p-2 flex-col gap-۱"> 
+                      <label for="firstname" class="font-semibold text-[12px]">ایمیل:</label>
+                        <input type="text" id="firstname" class="border rounded-md w-[296px] dark:bg-[#0B192D] p-2 border-[#E6E6E6] " placeholder="ایمیل" />
+                      </div>
+                      <div class="flex p-2 flex-col gap-1"> 
+                        <label for="firstname" class="font-semibold text-[12px] md:text-[16px]">شماره تماس:</label>
+                        <input type="text" id="firstname" class="border rounded-md w-[296px] dark:bg-[#0B192D] p-2 border-[#E6E6E6] " placeholder="شماره تماس شما" />
+                      </div>
+                      <div class="flex p-2 flex-col gap-1"> 
+                        <label for="firstname" class="font-semibold text-[12px] md:text-[16px]">متن:</label>
+                        <input type="text" id="firstname" class="border rounded-md w-[296px] dark:bg-[#0B192D] p-2 h-[136px] border-[#E6E6E6] " placeholder="متن پیام شما" />
+                      </div>
+                    <div class="p-2 gap-2">            
+                     <button type="submit" class="border w-[296px] rounded-md  border-[#2C7EF8] bg-[#2C7EF8] text-white">ارسال پیام</button>
+                    </div> 
+                </div>
+                </form>
+  
+            </div>
+          <div class="flex gap-6 justify-center items-center p-6 md:flex md:flex-col"> 
+            <div class="flex border rounded-xl w-[50%] gap-8 px-[8px] py-[12px] md:mt-[5vh] md:hidden ">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            <div class="flex flex-col ">
+              <h5 class="font-bold text-[10px] text-right">ایمیل</h5>
+              <p class="font-normal text-[10px] text-right md:font-bold md:text-[18px] md:leading-[27.9px] md:pr-[2vh]">QueraList@gmail.com</p>
+            </div>  
+          </div>
+            <div class="flex justify-start border rounded-xl w-[50%] md:w-full gap-8 px-[8px] py-[12px] md:flex md:border-none ">
+              <span class="">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+            <div class="flex flex-col ">
+              <h5 class="font-bold text-[10px] text-right md:hidden"> تلفن</h5>
+              <p class="font-normal text-[10px] text-right md:font-bold md:text-[18px] md:leading-[27.9px] "> 1234567 0912</p>
+            </div>
+            </div>
+            <div class="hidden md:flex ">
+              <i class="fa-solid fa-envelope"></i>
+                  <p class="font-medium text-[18px] leading-[27px] pr-[2vh]">QueraList@gmail.com</p>
+              
+            </div>
+            </div>
+  
+            <div class="flex justify-center py-12 gap-8 md:gap-6 md:flex md:justify-start ">
+              <span class="flex ">
+                <i class="fa-brands fa-github"></i>
+              </span>
+              <span class="flex ">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+              <span class="flex ">
+                <i class="fa-brands fa-linkedin"></i>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="contact__main hidden md:flex md:flex-col md:justify-between md:flex-1">  
+            <form class="flex flex-col gap-3">
+               <div class="flex gap-2">
+                  <div class="flex flex-col flex-1"> 
+                    <label for="firstname" class="font-semibold text-[16px]">نام:</label>
+                    <input type="text" id="firstname" class="border rounded-md p-4  dark:bg-[#0B192D] border-[#E6E6E6]" placeholder="نام شما" />
+                  </div>
+                  <div class="flex flex-col flex-1"> 
+                    <label for="firstname" class="font-semibold text-[16px]">نام خانوادگی:</label>
+                    <input type="text" id="firstname" class="border rounded-md  p-4  dark:bg-[#0B192D] border-[#E6E6E6] " placeholder="نام خانوادگی شما" />
+                  </div>
+                </div>  
+                <div class="flex flex-col"> 
+                  <label for="firstname" class="font-semibold text-[16px]">ایمیل:</label>
+                    <input type="text" id="firstname" class="border rounded-md  p-4 dark:bg-[#0B192D] border-[#E6E6E6] " placeholder="ایمیل" />
+                  </div>
+                  <div class="flex flex-col"> 
+                    <label for="firstname" class="font-semibold text-[16px]">شماره تماس:</label>
+                    <input type="text" id="firstname" class="border rounded-md  p-4  dark:bg-[#0B192D] border-[#E6E6E6] " placeholder="شماره تماس شما" />
+                  </div>
+                  <div class="flex flex-col"> 
+                    <label for="firstname" class="font-semibold text-[16px]">متن:</label>
+                    <input type="text" id="firstname" class="border rounded-md  p-4 h-[136px] dark:bg-[#0B192D] border-[#E6E6E6] " placeholder="متن پیام شما" />
+                  </div>             
+                 <button type="submit" class="border rounded-[6px] gap-[8px] pt-[8px] pr-[24px] pb-[8px] pl-[24px] h-[56px]  mt-[4vh] border-[#2C7EF8] bg-[#2C7EF8] text-white">ارسال پیام</button>
+  
+            </div>
+            </form>
+        </div>
+      </main>
+
+
+      <footer class="pt-24 dark:text-white">
+        <div class="flex justify-center items-center lg:gap-6">
+          <h4 class="font-semibold text-[20px]">کوئرا لیست</h4>
+        </div>
+        <div class="flex flex-col mx-12 justify-center lg:my-5 gap-2 lg:gap-8">
+          <div
+            class="flex lg:flex-row flex-col justify-around items-center mt-12"
+          >
+            <div
+              class="grid lg:grid-cols-1 grid-cols-2 gap-4 lg:order-1 order-2 lg:mt-1 mt-8"
+            >
+              <span
+                class="flex lg:order-1 order-2 lg:shadow-none shadow-[5px_5px_20px_-15px_rgba(0,0,0,0.3)] rounded-lg p-2"
+              >
+                <i class="fa-solid fa-fax dark:text-white"></i>
+                <p class="pr-2 font-normal text-[14px]">فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+              </span>
+              <span
+                class="flex lg:order-2 order-3 lg:shadow-none shadow-[5px_5px_20px_-15px_rgba(0,0,0,0.3)] rounded-lg p-2"
+              >
+                <i class="fa-solid fa-phone"></i>
+                <p class="pr-2 font-normal text-[14px]">
+                  تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱
+                </p>
+              </span>
+              <span
+                class="flex lg:order-3 row-span-2 order-1 lg:shadow-none shadow-[5px_5px_20px_-15px_rgba(0,0,0,0.3)] rounded-lg p-2"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="pr-2 font-normal text-[14px]">
+                  آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+                  بست شب بو
+                </p>
+              </span>
+            </div>
+            <div class="flex flex-col gap-4 lg:order-2 order-1">
+              <h5 class="font-bold">با ما در ارتباط باش</h5>
+              <p class="font-normal">
+                اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+                بشی.
+              </p>
+              <form>
+                <div
+                  class="border-2 p-3 border-[#BCBCBC] rounded-lg relative w-full"
+                >
+                  <input
+                    type="email"
+                    placeholder="ایمیل"
+                    class="border-none rounded-lg outline-none w-full dark:bg-[#1a202c]"
+                  />
+                  <button
+                    class="text-white bg-[#2C7EF8]  text-center rounded-lg absolute border-none left-1 top-1 py-2 px-6"
+                    type="submit"
+                  >
+                    ارسال
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <p
+            class="text-[14px] font-normal text-right text-[#666666] flex justify-center pt-2"
+          >
+            تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,8 +1,8 @@
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
 
 const theme=window.localStorage.getItem('theme') || 'light'
 
@@ -30,8 +30,11 @@ simple.src = `./assets/svg/simple-${theme}.png`
 const online = document.querySelector('#online')
 online.src = `./assets/svg/simple-${theme}.png`
 
-const imagegroup = document.querySelector('#group-img')
+const imagegroup = document.querySelector('.group-img-desktop')
 imagegroup.src = `./assets/img/group-${theme}.png`
+
+const imagegroup1 = document.querySelector('.group-img-mobile')
+imagegroup1.src = `./assets/img/Mobile-${theme}.png`
 
 const element1 =document.createElement('div')
 element1.setAttribute('class', 'xx')

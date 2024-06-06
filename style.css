@@ -34,6 +34,11 @@ body {
   background-color: black;
   transition-duration: 0.25s;
 }
+.dark .hamburger > span,
+.dark .hamburger > span::before,
+.dark .hamburger > span::after {
+  background-color: white;
+}
 .hamburger > span::before {
   content: "";
   top: -8px;
@@ -53,4 +58,5 @@ body {
   top: 0;
   transform: rotate(90deg);
 }
+
 

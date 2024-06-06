@@ -7,26 +7,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <link
- rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   </head>
 
   <body class="bg-[#FEFEFE] dark:bg-[#060C18]">
+    
     <div
       class="menu-toggle fixed top-5 right-5 cursor-pointer md:hidden"
-      id="hamburgerMenu"
-    >
+      id="hamburgerMenu">
       <div class="hamburger">
         <span class="dark:bg-white"></span>
       </div>
     </div>
     <main
       id="main"
-      class="content flex-1 p-4 w-full flex space-x-5 space-x-reverse"
+      class="content flex-1 p-4 flex space-x-5 space-x-reverse  h-full md:mr-[20%]"
     >
         <aside
           id="sidebar"
-          class="fixed md:static sidebar flex flex-col bg-white dark:bg-[#091120] rounded-lg shadow-lg p-4 right-0 top-1 transform md:translate-x-0 translate-x-[100%]"
+          class="fixed z-[999] h-full sidebar flex flex-col w-auto bg-white w-[20%] dark:bg-[#091120] rounded-lg shadow-lg p-4 right-0 top-1 transform md:translate-x-0 translate-x-[100%] justify-between"
         >
+        <div class="flex justify-between md:hidden dark:text-white">
+          <p>کوئرالیست</p>
+          <button class="close-sidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
           <div
             id="sidebar-userInfo"
             class="user-profile items-center gap-3 m-4 md:flex hidden"
@@ -44,7 +48,7 @@
 
           <nav
             id="sidebar-menu"
-            class="menu py-24 px-5 flex flex-col space-y-3"
+            class="menu py-24 px-5 flex flex-col space-y-3 flex-1"
           >
             <a
               href="#"
@@ -467,44 +471,47 @@
           id="taskForm"
           class="flex flex-col gap-4 bg-white dark:bg-[#060C18] border rounded-xl shadow-xl mt-5 p-4 hidden"
         >
-          <input
+          <input 
             type="text"
             id="title"
             placeholder="نام تسک"
-            class="dark:bg-slate-600 rounded dark:text-white"
+            class="dark:bg-slate-600 rounded dark:text-white p-2 outline-none"
           />
           <textarea
             placeholder="توضیحات"
             id="desc"
-            class="resize-none mt-2 dark:bg-slate-600 rounded dark:text-white"
+            class="resize-none mt-2 dark:bg-slate-600 rounded dark:text-white p-2 outline-none"
           ></textarea>
           <button
             id="showPriorityButton"
-            class="flex items-center gap-2 border border-[#E9E9E9] rounded py-2 px-2 max-w-fit"
+            class="flex items-center gap-2 border border-[#E9E9E9] rounded py-2 px-2 max-w-fit tags"
           >
             <img src="./assets/svg/tag-right.png" alt="tag-right" />
             <span class="font-semibold text-xs dark:text-white">تگ ها</span>
           </button>
           <div id="item-priority" class="hidden">
             <button
-              onclick="setPrioity('high')"
-              id="high-priority"
-              class="border rounded bg-[#FFE2DB] text-[#FF5F37] px-2 py-1"
+              onclick="setPriority('high')"
+              id="high"
+              class="border rounded bg-[#FFE2DB] text-[#FF5F37] px-2 py-1 tag-item"
             >
+              <span class="hidden tag-close-btn"><i class="fa-solid fa-xmark"></i></span>
               بالا
             </button>
             <button
-              onclick="setPrioity('mid')"
-              id="mid-priority"
-              class="border rounded bg-[#FFEFD6] text-[#FFAF37] px-2 py-1"
+              onclick="setPriority('mid')"
+              id="mid"
+              class="border rounded bg-[#FFEFD6] text-[#FFAF37] px-2 py-1 tag-item"
             >
+              <span class="hidden tag-close-btn"><i class="fa-solid fa-xmark"></i></span>
               متوسط
             </button>
             <button
-              onclick="setPrioity('low')"
-              id="low-priority"
-              class="border rounded bg-[#C3FFF1] text-[#11A483] px-2 py-1"
+              onclick="setPriority('low')"
+              id="low"
+              class="border rounded bg-[#C3FFF1] text-[#11A483] px-2 py-1 tag-item"
             >
+              <span class="hidden tag-close-btn"><i class="fa-solid fa-xmark"></i></span>
               پایین
             </button>
           </div>

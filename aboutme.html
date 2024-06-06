@@ -13,54 +13,27 @@
   </head>
   <body class="flex flex-col dark:bg-[#1A202C]">
     <header class="dark:text-white">
-      <div
-      id="header_navbar"
-      class="flex justify-between px-20 pt-4 mb-[2vh]"
-      >
-      <div id="header_navbar_list" class="flex mt-[1.3vh]">
-        <nav class="flex gap-8">
-          <button class="lg:hidden"><i class="fas fa-bars "></i></button>
-            <a
-              href="./main.html"
-              class="font-bold hover:text-[#2C7EF8] text-base lg:mx-auto"
-              >کوئرا لیست</a
-            >
+      <div id="header_navbar" class="flex justify-between px-20 pt-4 mb-[2vh] bg">
+        <div id="header_navbar_list" class="mt-[1.3vh] w-full">
+            
+           <nav class="flex gap-8 w-full">
+            <button class="lg:hidden block dark:text-white"><i class="fas fa-bars"></i></button>
+            
+            <a href="./main.html" class="font-bold hover:text-[#2C7EF8] text-base lg:flex-initial flex-1 text-center">کوئرا لیست</a>
+            
+            <a href="./main.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">صفحه اصلی</a>
+            <a href="./aboutme.html" class="text-base hover:text-[#2C7EF8] lg:block hidden" >درباره من</a>
+            <a href="./contactus.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">ارتباط با ما</a>
+           </nav>
 
-            <a
-              href="./main.html"
-              class="text-base hover:text-[#2C7EF8] lg:block hidden"
-              >صفحه اصلی</a
-            >
-            <a
-              href="./aboutme.html"
-              class="text-base hover:text-[#2C7EF8] lg:block hidden"
-              >درباره من</a
-            >
-            <a href="./information.html" class="text-base hover:text-[#2C7EF8] lg:block hidden"
-              >ارتباط با ما</a
-            >
-          </nav>
         </div>
-        <div class="lg:block hidden">
-          <div
-            id="header_navbar_action"
-            class="flex justify-center items-center mb-[2vh]"
-          >
-            <button
-              type="button"
-              class="text-center rounded-lg border-solid text-white border-[#2C7EF8] bg-[#2C7EF8] ml-[2vh] border-x-[30px] border-y-[8px] h-12"
-            >
-              ورود به اپلیکیشن
-            </button>
-            <a href=""
-              ><img
-                id="theme-button"
-                src="./assets/svg/button-light.png"
-                alt="darkmode"
-            /></a>
-          </div>
+       <div class="lg:block hidden">
+        <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh] w-[300px]">
+            <a href="./todolist.html"><button type="button" class="text-center rounded-lg text-white border-[#2C7EF8] bg-[#2C7EF8] px-4 ml-[2vh]  h-12 ">ورود به اپلیکیشن</button></a>
+            <a href=""><img src="./assets/svg/button-dark.png" id="theme-button" alt="darkmode"></a>
         </div>
-      </div>
+       </div>
+    </div> 
     </header>
     <main class="flex justify-center px-11">
       <div class="grid gap-6 px-12 md:grid-cols-2">
