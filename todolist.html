@@ -7,9 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   </head>
 
   <body class="bg-[#FEFEFE] dark:bg-[#060C18]">
@@ -18,10 +16,9 @@
       id="hamburgerMenu"
     >
       <div class="hamburger">
-        <span></span>
+        <span class="dark:bg-white"></span>
       </div>
     </div>
-
     <main
       id="main"
       class="content flex-1 p-4 w-full flex space-x-5 space-x-reverse"
@@ -379,7 +376,7 @@
             </div>
             <hr />
             <a
-              href="#"
+              href="./main.html"
               class="menu-item flex items-center hover:text-blue-500 gap-3 pt-3"
             >
               <svg
@@ -435,7 +432,7 @@
           <h1 class="font-extrabold text-base md:text-xl dark:text-white">
             تسک های امروز
           </h1>
-          <h2 class="font-normal text-xs md:text-sm mt-1 dark:text-white">
+          <h2 id="statusMessage" class="font-normal text-xs md:text-sm mt-1 dark:text-white">
             تسکی برای امروز نداری !
           </h2>
         </div>
@@ -483,7 +480,7 @@
           ></textarea>
           <button
             id="showPriorityButton"
-            class="flex items-center gap-2 border border-[#E9E9E9] rounded py-2 px-2"
+            class="flex items-center gap-2 border border-[#E9E9E9] rounded py-2 px-2 max-w-fit"
           >
             <img src="./assets/svg/tag-right.png" alt="tag-right" />
             <span class="font-semibold text-xs dark:text-white">تگ ها</span>
@@ -533,11 +530,7 @@
           >
             تسک‌های انجام شده
           </h2>
-          <p
-            class="font-normal text-xs text-[#696969] md:text-sm mt-1 dark:text-white"
-          >
-            3 تسک را باید انجام دهید
-          </p>
+          
         </div>
         <div id="completedTasks"></div>
       </div>

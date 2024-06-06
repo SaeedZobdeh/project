@@ -1,11 +1,12 @@
-//سایدبار
+// Selecting the menu toggle button and the sidebar element
 const menuToggle = document.querySelector(".menu-toggle");
 const sidebar = document.querySelector(".sidebar");
-let mode = "add";
-let editedTaskId = 0;
+let mode = "add"; // Default mode for adding tasks
+let editedTaskId = 0; // ID of the task being edited
 
+// Toggle the sidebar visibility on menu toggle button click
 menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("is-active");
+  menuToggle.classList.toggle("is-active"); // Toggle active state for the menu button
 
   if (sidebar.classList.contains("show")) {
     sidebar.classList.remove("show");
@@ -15,7 +16,8 @@ menuToggle.addEventListener("click", () => {
     sidebar.classList.add("show");
   }
 });
-//نمایش ساعت برای کاربر
+
+// Function to update the current date and time
 function updateDateTime() {
   const now = new Date();
   const currentDateTime = now.toLocaleString("fa-IR", {
@@ -25,67 +27,62 @@ function updateDateTime() {
   });
   document.querySelector(".datetime").textContent = currentDateTime;
 }
+// Update the date and time every second
 setInterval(updateDateTime, 1000);
 
-// نمایش و هیدن کردن نگ  فرم و تصویر بک گراند
-document
-  .getElementById("showFormButton")
-  .addEventListener("click", function () {
-    let taskForm = document.getElementById("taskForm");
-    let additionalContent = document.getElementById("additionalContent");
+// Toggle the task form and additional content visibility
+document.getElementById("showFormButton").addEventListener("click", function () {
+  let taskForm = document.getElementById("taskForm");
+  let additionalContent = document.getElementById("additionalContent");
 
-    if (taskForm.classList.contains("hidden")) {
-      taskForm.classList.remove("hidden");
-      additionalContent.classList.add("hidden");
-    } else {
-      taskForm.classList.add("hidden");
-      additionalContent.classList.remove("hidden");
-    }
-  });
+  taskForm.classList.toggle("hidden");
+  additionalContent.classList.toggle("hidden");
+});
 
-// نمایش و هیدن کردن نگ اولویت ها
-document
-  .getElementById("showPriorityButton")
-  .addEventListener("click", function () {
-    var itemPriority = document.getElementById("item-priority");
-    if (itemPriority.classList.contains("hidden")) {
-      itemPriority.classList.remove("hidden");
-    } else {
-      itemPriority.classList.add("hidden");
-    }
-  });
+// Toggle the task priority section visibility
+document.getElementById("showPriorityButton").addEventListener("click", function () {
+  let itemPriority = document.getElementById("item-priority");
+  itemPriority.classList.toggle("hidden");
+});
 
-let selectedPriority = "";
+let selectedPriority = ""; // Selected priority for a task
 
-const setPrioity = (value) => {
+// Function to set the task priority
+const setPriority = (value) => {
   selectedPriority = value;
 };
 
-// دریافت اطلاعات از کاربر  و نمایش آن در صفحه
-const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+const tasks = JSON.parse(localStorage.getItem("tasks")) || []; // Retrieve tasks from local storage or initialize an empty array
 const titleInput = document.getElementById("title");
 const descInput = document.getElementById("desc");
 const addTaskButton = document.getElementById("addTask-btn");
 const tasksContainer = document.getElementById("tasksContainer");
+const completedTasksContainer = document.getElementById("completedTasks");
 const priorityButtons = document.querySelectorAll(".priority-btn");
+const statusMessage = document.getElementById("statusMessage");
 
-function renderTodoList(tasks, isUpdate = false) {
-  if (isUpdate) {
-    additionalContent.classList.remove("hidden");
-    taskForm.classList.add("hidden");
+// Function to render the todo list
+function renderTodoList() {
+  tasksContainer.innerHTML = "";
+  completedTasksContainer.innerHTML = "";
 
-    tasksContainer.innerHTML = "";
+  if (!tasks.length) {
+    statusMessage.textContent = "تسکی برای امروز نداری !";
+    return;
   }
-  console.log(tasks);
-  if (!tasks || tasks.length === 0) return;
 
-  tasks.forEach((task) => addTaskToDOM(task));
+  let pendingTasksCount = 0;
+  tasks.forEach((task) => {
+    addTaskToDOM(task);
+    if (!task.completed) {
+      pendingTasksCount++;
+    }
+  });
+
+  updateStatusMessage(pendingTasksCount);
 }
 
-(() => {
-  renderTodoList(tasks);
-})();
-
+// Set the task priority based on the selected button
 priorityButtons.forEach((button) => {
   button.addEventListener("click", () => {
     selectedPriority = button.innerText;
@@ -98,6 +95,7 @@ priorityButtons.forEach((button) => {
   });
 });
 
+// Add a new task or edit an existing task
 addTaskButton.addEventListener("click", () => {
   if (mode === "add") {
     const title = titleInput.value.trim();
@@ -109,38 +107,41 @@ addTaskButton.addEventListener("click", () => {
         title,
         desc,
         priority: selectedPriority,
+        completed: false,
       };
       tasks.push(task);
       addTaskToDOM(task);
       saveTasksToLocalStorage(tasks);
+      reset();
     }
   } else {
     editTask(editedTaskId);
   }
-
-  reset();
 });
 
+// Reset the task form and mode
 const reset = () => {
   titleInput.value = "";
   descInput.value = "";
   mode = "add";
   editedTaskId = 0;
+  addTaskButton.textContent = "اضافه کردن تسک";
+  document.getElementById("taskForm").classList.add("hidden");
+  document.getElementById("additionalContent").classList.remove("hidden");
 };
 
-//فرم اضافه کردن تسک
+// Add a task element to the DOM
 function addTaskToDOM(task) {
-  console.log(task);
-
   const taskElement = document.createElement("div");
   taskElement.className =
     "border rounded-xl bg-white px-5 py-4 mt-5 dark:bg-[#002247] relative";
+  taskElement.setAttribute("data-task-id", task.id);
 
   taskElement.innerHTML = `
           <div class="flex justify-between ">
               <div class="flex gap-4 items-center">
-                  <input type="checkbox" class="h-6 w-6">
-                  <h2 class="font-bold text-[#242424] text-sm md:text-base dark:text-white">${
+                  <input type="checkbox" class="h-6 w-6" onchange="markTaskAsCompleted(this, ${task.id})" ${task.completed ? "checked" : ""}>
+                  <h2 class="font-bold text-[#242424] text-sm md:text-base dark:text-white ${task.completed ? "line-through" : ""}">${
                     task.title
                   }</h2>
                   <span id="show-priority" class="rounded 
@@ -181,12 +182,19 @@ function addTaskToDOM(task) {
           }</span>
       `;
 
-  tasksContainer.appendChild(taskElement);
+  if (task.completed) {
+    completedTasksContainer.appendChild(taskElement);
+  } else {
+    tasksContainer.appendChild(taskElement);
+  }
 }
 
+// Save tasks to local storage
 function saveTasksToLocalStorage(tasks) {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
+// Prepare the form for editing a task
 const edit = (id) => {
   additionalContent.classList.add("hidden");
   taskForm.classList.remove("hidden");
@@ -194,92 +202,58 @@ const edit = (id) => {
   const task = tasks.find((x) => x.id === id);
   mode = "edit";
   editedTaskId = id;
-
+  addTaskButton.textContent = "ویرایش تسک";
   titleInput.value = task.title;
   descInput.value = task.desc;
 };
 
+// Update a task with new values
 const editTask = (id) => {
-  const result = tasks.map((task) => {
-    console.log(id, task.id);
-    if (task.id === id) {
-      return { ...task, title: titleInput.value, desc: descInput.value };
-    } else {
-      return task;
-    }
-  });
-
-  renderTodoList(result, true);
-  saveTasksToLocalStorage(result);
+  const taskIndex = tasks.findIndex((task) => task.id === id);
+  if (taskIndex !== -1) {
+    tasks[taskIndex].title = titleInput.value;
+    tasks[taskIndex].desc = descInput.value;
+    saveTasksToLocalStorage(tasks);
+    renderTodoList();
+    reset();
+  }
 };
 
+// Toggle task options visibility
 const showOptions = (id) => {
   document.getElementById(`options-${id}`).classList.toggle("hidden");
 };
 
-//delete option
+// Delete a task by ID
 const deleteTask = (id) => {
-  const updatedTasks = tasks.filter((task) => task.id !== id);
-
-  saveTasksToLocalStorage(updatedTasks);
-  renderTodoList(updatedTasks, true);
+  const taskIndex = tasks.findIndex((task) => task.id === id);
+  if (taskIndex !== -1) {
+    tasks.splice(taskIndex, 1);
+    saveTasksToLocalStorage(tasks);
+    renderTodoList();
+  }
 };
 
-// uptade Dom function
-const updateDOM = () => {
-  tasksContainer.innerHTML = "";
-  tasks.forEach((task) => addTaskToDOM(task));
-};
-
-// چک باکس
-function markTaskAsCompleted(checkbox, taskElement) {
-  const completedTasksContainer = document.getElementById("completedTasks");
-  const taskTitle = taskElement.querySelector("h2");
-
-  if (checkbox.checked) {
-    taskTitle.innerHTML = `<del>${taskTitle.innerText}</del>`;
-    completedTasksContainer.appendChild(taskElement);
-  } else {
-    taskTitle.innerHTML = taskTitle.innerText;
-    const tasksContainer = document.getElementById("tasksContainer");
-    tasksContainer.appendChild(taskElement);
+// Mark a task as completed or not
+function markTaskAsCompleted(checkbox, taskId) {
+  const taskIndex = tasks.findIndex((task) => task.id === taskId);
+  if (taskIndex !== -1) {
+    tasks[taskIndex].completed = checkbox.checked;
+    saveTasksToLocalStorage(tasks);
+    renderTodoList();
   }
 }
 
-const taskCheckboxes = document.querySelectorAll(
-  '#tasksContainer input[type="checkbox"]'
-);
-
-taskCheckboxes.forEach((checkbox) => {
-  const taskId = checkbox
-    .closest("div.border.rounded-xl")
-    .getAttribute("data-task-id");
-  const savedState = localStorage.getItem(`task-${taskId}`);
-  if (savedState === "completed") {
-    checkbox.checked = true;
-    const taskElement = checkbox.closest("div.border.rounded-xl");
-    markTaskAsCompleted(checkbox, taskElement);
+// Update the status message based on pending tasks count
+function updateStatusMessage(pendingTasksCount) {
+  if (pendingTasksCount === 0) {
+    statusMessage.textContent = "تسکی برای امروز نداری !";
+  } else {
+    statusMessage.textContent = `${pendingTasksCount} تسک در حال انجام داری`;
   }
+}
 
- savedState && renderTodoList(savedState, true);
-});
-
-
-taskCheckboxes.forEach((checkbox) => {
-  checkbox.addEventListener("change", () => {
-    const taskElement = checkbox.closest("div.border.rounded-xl");
-    markTaskAsCompleted(checkbox, taskElement);
-
-    const taskId = taskElement.getAttribute("data-task-id");
-    if (checkbox.checked) {
-      localStorage.setItem(`task-${taskId}`, "completed");
-    } else {
-      localStorage.removeItem(`task-${taskId}`);
-    }
-  });
-});
-
-// تم دارک و لایت برای پروژه
+// Initialize the app on DOM content loaded
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
@@ -300,4 +274,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.classList.remove("dark");
     localStorage.setItem("theme", "light");
   });
+
+  renderTodoList(); // Render the todo list on page load
 });

@@ -3,43 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>کوِئرا لیست</title>
+    <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
    
 </head>
 <body class=" dark:text-white">
-    <div id="root"></div>
+    
     <!-- header main -->
     <header id="header" class=" dark:bg-black bg-white">
 
-        <nav id="header_navbar" class="flex justify-between  px-20 mt-[2vh] " >
-            
-            <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh]">
-                <button type="button" class="text-center rounded-lg border-solid text-white border-[#2C7EF8] bg-[#2C7EF8]  ml-[2vh]  border-x-[30px] border-y-[8px] h-12 ">ورود به اپلیکیشن</button>
-                <a href=""><img src="./assets/svg/Frame 1000005337.png" alt="darkmode"></a>
-            </div>
-           
-           
-            <div id="header_navbar_list" class="flex justify-center text-center mt-[1.3vh]">
+        <div id="header_navbar" class="flex justify-between px-20 pt-4 mb-[2vh] bg">
+            <div id="header_navbar_list" class="flex mt-[1.3vh]">
                 
                <nav class="flex gap-8 ">
                 <button class="lg:hidden"><i class="fas fa-bars"></i></button>
                 
                 <a href="./main.html" class="font-bold hover:text-[#2C7EF8] text-base lg:mx-auto">کوئرا لیست</a>
                 
-                <a href="#" class="text-base hover:text-[#2C7EF8] lg:block hidden">صفحه اصلی</a>
-                <a href="#" class="text-base hover:text-[#2C7EF8] lg:block hidden" >درباره ما</a>
+                <a href="./main.html" class="text-base hover:text-[#2C7EF8] lg:block hidden">صفحه اصلی</a>
+                <a href="./aboutme.html" class="text-base hover:text-[#2C7EF8] lg:block hidden" >درباره من</a>
                 <a href="#" class="text-base hover:text-[#2C7EF8] lg:block hidden">ارتباط با ما</a>
                </nav>
 
             </div>
-           
-        </nav> 
-        <div class="header_image bg-gradient-to-b from-[#EBF3FF] to-[#ffffff]  ">
-            <div class="header_image_title flex-col justify-center text-center align-baseline  items-center relative">
-                <img src="./assets/svg/Star 2 (Stroke).png" alt="Star_top" class=" items-center absolute top-14 right-80" >
+           <div class="lg:block hidden">
+            <div id="header_navbar_action" class="flex justify-center items-center mb-[2vh]">
+                <a href="./todolist.html"><button type="button" class="text-center rounded-lg border-solid text-white border-[#2C7EF8] bg-[#2C7EF8]  ml-[2vh]  border-x-[30px] border-y-[8px] h-12 ">ورود به اپلیکیشن</button></a>
+                <a href=""><img id="theme-button" alt="darkmode"></a>
+            </div>
+           </div>
+        </div> 
+        <div class="header_image bg-gradient-to-b from-[#EBF3FF] to-[#ffffff]dark:bg-gradient-to-b dark:from-[#1a3358a2] dark:to-[#1A202C]">
+            <div class="header_image_title flex flex-col justify-center text-center align-baseline items-center relative">
+                <img alt="Star_top" id="star-img1" class=" items-center absolute top-14 right-80" >
                 <P class="font-normal text-[46px] pt-32">تمرکز رو وارد زندگیت کن</P>
                 <h1 class="font-black text-[64px] mt-3">سمت اهدافت اوج بگیر</h1>
                 <img src="./assets/svg/Vector 74.png" alt="line">
@@ -47,8 +45,8 @@
                 <p class="font-normal text-[20px] mt-[50px] leading-8 w-full lg:px-28 ">زمان در یک روز برای ما محدود است ، اما <span >مهمترین کار</span> این است که چگونه از آن استفاده کنیم.
                     با اپلیکیشن کوئرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید.</p>
                 <div class="pt-8">
-                    <button type="button" class="ml-5 mb-20 border-x-[30px] border-y-[10px] border-solid text-white border-[#2C7EF8] bg-[#2C7EF8] text-center rounded-lg">ورود به اپلیکیشن</button>
-                    <button type="button" class=" border-x-[50px] border-y-[10px] border-solid text-[#2C7EF8] border-[#EBF3FE] dark:border-[#122549] dark:bg-[#122549] dark:text-white bg-[#EBF3FE] text-center rounded-lg">درباره ما</button>
+                    <a href="./todolist.html"><button type="button" class="ml-5 mb-20 border-x-[30px] border-y-[10px] border-solid text-white border-[#2C7EF8] bg-[#2C7EF8] text-center rounded-lg">ورود به اپلیکیشن</button></a>
+                    <a href="./aboutme.html"><button type="button" class=" border-x-[50px] border-y-[10px] border-solid text-[#2C7EF8] border-[#EBF3FE] dark:border-[#122549] dark:bg-[#122549] dark:text-white bg-[#EBF3FE] text-center rounded-lg">درباره من</button></a>
                 </div>
                 
             </div>
@@ -118,7 +116,7 @@
                 </div>
                 
                 <div class="pt-8">
-                    <a href="#" class="text-[18px] leading-[27.9px] font-semibold text-[#2C7EF8]"> ورود به اپلیکیشن 
+                    <a href="./todolist.html" class="text-[18px] leading-[27.9px] font-semibold text-[#2C7EF8]"> ورود به اپلیکیشن 
                     </a>
                 </div>
 
@@ -231,50 +229,85 @@
                     </div>
                 </div>
             </div>
-            <div class=" relative">
+            <div class=" relative pt-10">
                 <img src="./assets/svg/Frame 1000005305.png" alt="sliderButton"  >
             </div>
             </div>
 
     </main>
 
-    <footer>
-        <div class="footer__description">
-            کوئرالیست
+    <footer class="pt-24 dark:bg-[#1A202C] dark:text-white">
+        <div class="flex justify-center items-center lg:gap-6">
+          <h4 class="font-semibold text-[20px]">کوئرا لیست</h4>
         </div>
-        
-        <div class="footer__middle">
-            <div class="footer__middle__left">
-                باما در ارتباط باش 
-                <p>اگر میخوای اولین نفر باشی که از فیچرهای جدید و تخفیفات با خبر باشی</p>
-                 
-                <button>ارسال</button> 
-                <input type="email">              
+        <div class="flex flex-col mx-12 justify-center lg:my-5 gap-2 lg:gap-8">
+          <div
+            class="flex lg:flex-row flex-col justify-around items-center mt-12"
+          >
+            <div
+              class="grid lg:grid-cols-1 grid-cols-2 gap-4 lg:order-1 order-2 lg:mt-1 mt-8"
+            >
+              <span
+                class="flex lg:order-1 order-2 lg:shadow-none shadow-[5px_5px_20px_-15px_rgba(0,0,0,0.3)] rounded-lg p-2"
+              >
+                <i class="fa-solid fa-fax"></i>
+                <p class="pr-2 font-normal text-[14px]">فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+              </span>
+              <span
+                class="flex lg:order-2 order-3 lg:shadow-none shadow-[5px_5px_20px_-15px_rgba(0,0,0,0.3)] rounded-lg p-2"
+              >
+                <i class="fa-solid fa-phone"></i>
+                <p class="pr-2 font-normal text-[14px]">
+                  تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱
+                </p>
+              </span>
+              <span
+                class="flex lg:order-3 row-span-2 order-1 lg:shadow-none shadow-[5px_5px_20px_-15px_rgba(0,0,0,0.3)] rounded-lg p-2"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="pr-2 font-normal text-[14px]">
+                  آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+                  بست شب بو
+                </p>
+              </span>
             </div>
-            <div class="footer__middle__right">
-                <div class="footer__middle__right__1">
-                <img src="./faxs.png" alt="فکس">
-                <p> فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱ </p>
-            </div>
-                <div class="footer__middle__right__2"> 
-                    <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
-                    <img src="./call.png" alt=" تلفن">
+            <div class="flex flex-col gap-4 lg:order-2 order-1">
+              <h5 class="font-bold">با ما در ارتباط باش</h5>
+              <p class="font-normal">
+                اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+                بشی.
+              </p>
+              <form>
+                <div
+                  class="border-2 p-3 border-[#BCBCBC] rounded-lg relative w-full"
+                >
+                  <input
+                    type="email"
+                    placeholder="ایمیل"
+                    class="border-none rounded-lg outline-none w-full dark:bg-[#1A202C]"
+                  />
+                  <button
+                    class="text-white bg-[#2C7EF8] text-center rounded-lg absolute border-none left-1 top-1 py-2 px-6"
+                    type="submit"
+                  >
+                    ارسال
+                  </button>
                 </div>
-                <div class="footer__middle__right__3">
-                    آدرس دفتر مرکزی:پونک-خیابان اشرفی اشفهانی -خیابان صبحدل-بن بست شب بو 
-                    <img src="./Vector.png" alt="locatin">
-                </div>
+              </form>
             </div>
-            <div class="footer__end"> 
-                 حقوق مادی و معنوی این سایت متعلق به کوئرالیست می باشد . 
-
-            </div>
-
+          </div>
+          <p
+            class="text-[14px] font-normal text-right text-[#666666] flex justify-center pt-2"
+          >
+            تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+          </p>
         </div>
-    </footer>
-
-
-
+      </footer>
     <script src="./app.js"></script>
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+        };
+      </script>
 </body>
 </html>
